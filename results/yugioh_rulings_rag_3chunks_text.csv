@@ -1,0 +1,850 @@
+id,cards,game_state,query,expected_decision,expected_explanation,rag_decision,rag_explanation,rag_raw,rag_sections
+case_001,"['Mystical Space Typhoon', 'Royal Decree']","Player B activates ""Royal Decree"". Player A controls ""Mystical Space Typhoon"".","Can Player A chain ""Mystical Space Typhoon"" to the activation of ""Royal Decree""?",YES,A Quick-Play Spell can be chained to a Trap activation.,NO,"""Mystical Space Typhoon"" is a Quick-Play Spell Card with a Spell Speed of 1. ""Royal Decree"" is a Continuous Trap Card with a Spell Speed of 2. Since ""Mystical Space Typhoon"" has a lower Spell Speed than ""Royal Decree"", Player A cannot chain it to the activation of ""Royal Decree"".","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player B activates ""Royal Decree"". Player A controls ""Mystical Space Typhoon"".
+
+### Query
+Can Player A chain ""Mystical Space Typhoon"" to the activation of ""Royal Decree""?
+
+### Card Text
+Mystical Space Typhoon:
+  Card Type: Spell Card
+  Sub-Type: Quick-Play
+  Text: Target 1 Spell/Trap on the field; destroy that target.
+
+Royal Decree:
+  Card Type: Trap Card
+  Sub-Type: Continuous
+  Text: Negate all other Trap effects on the field.
+
+### Rulebook Context
+[Section: 13. Chains and Spell Speed]
+and Player B responds by activating their Set “Threatening Roar.” Then, Player A responds to that by activating “Seven Tools of the Bandit.” In this case, Chain Links are stacked up as following. • Chain Link 3 “Seven Tools of the Bandit” Negates the effect of “Threatening Roar” Spell Speed 3 • Chain Link 2 “Threatening Roar” Prevents the opponent from declaring attacks this turn. Spell Speed 2 • Chain Link 1 “Heavy Storm” Destroys all Spell and Trap Cards on the ﬁeld. Spell Speed 1 ”Seven Tools of the Bandit” (Chain Link 3) is resolved ﬁrst and negates the activation of “Threatening Roar.” “Threatening Roar” (Chain Link 2) would then be resolved, but the effect of “Seven Tools of the Bandit” stops its activation. The turn player will still be able to declare attacks. Then the effect of “Heavy Storm” (Chain Link 1) is resolved successfully, destroying all Spell and Trap Cards on the ﬁeld, allowing the turn player to attack without interference from Spell or Trap Cards. TURN PLAYER’S PRIORITY: The turn player always starts with Priority, or the choice to activate a card first, in each phase or step of their turn. As long as the turn player has Priority, the opponent cannot activate cards or effects, except for effects that activate automatically, like Trigger or Flip effects. The turn player can either: • Use Priority to play a card or activate an effect OR • Pass Priority to the opponent so they can activate an effect. A player must pass Priority to the opponent when moving on to the next phase or step. Strictly speaking, you would always declare that you’re passing Priority before the end of every phase and step, and ask your opponent if they wish to play a card. However, for ease of
+
+---
+
+[Section: 13. Chains and Spell Speed]
+WHAT IS A CHAIN? Chains are a way to order the resolution of multiple card effects. They are used when the effects of more than 1 card are activated at once, or when a player wants to use an effect after a card has been played, but BEFORE that card has an effect on the game. If a card’s effect is activated, the opponent is always given a chance to respond with a card effect of their own, creating a Chain. If your opponent responds with an effect, then you can choose to respond and add another effect to the Chain. If your opponent does not respond, you may activate a second effect and create a Chain to your own card’s activation. Both players continue to add effects to the Chain until they both wish to add nothing else, then you resolve the outcome in reverse order – starting with the last card that was activated. You must always be careful not to resolve the effects of your cards before asking your opponent if they wish to make a Chain. SPELL SPEED: Every type of card effect has a Spell Speed between 1 and 3. If you want to respond to a card effect in a Chain, you have to use an effect with Spell Speed 2 or higher, and it cannot have a lower Spell Speed than the effect you are responding to. Spell Speeds: Spell, Trap, and Effect Monster effects have different Spell Speeds. There are Spell Speeds from 1 to 3. You can only respond with an effect if it is Spell Speed 2 or higher, and has an equal or greater Spell Speed than the effect on the Chain Link before it. • Spell Speed 1 Spells (Normal, Equip, Continuous, Field, Ritual), Effect Monster’s effects (Ignition,
+
+---
+
+[Section: 13. Chains and Spell Speed]
+from 1 to 3. You can only respond with an effect if it is Spell Speed 2 or higher, and has an equal or greater Spell Speed than the effect on the Chain Link before it. • Spell Speed 1 Spells (Normal, Equip, Continuous, Field, Ritual), Effect Monster’s effects (Ignition, Trigger, and Flip): This is the slowest of all Spell Speeds. These cards cannot be activated in response to any other effects. Typically, these effects cannot be Chain Link 2 or higher, unless multiple Spell Speed 1 effects are activated simultaneously. • Spell Speed 2 Traps (Normal, Continuous), Quick-Play Spells, Effect Monster’s Quick Effects: These cards can be used to respond to a Spell Speed 1 or 2 effect, and can typically be activated during any phase. • Spell Speed 3 Counter Traps: This is the fastest of all Spell Speeds and can be used to respond to a card of any Spell Speed. Only another Spell Speed 3 card may be used to respond to these cards. How a Chain Works: The ﬁrst effect activated is Chain Link 1. The next effect is Chain Link 2, and so on. Every time a new Chain Link is made, they are stacked up in the order that the cards are activated. Once the Chain is completed, the outcome is resolved starting with the most recent card to be activated at the top of the Chain and proceeding down to Chain Link 1. EXAMPLE OF A CHAIN: Player A plays “Heavy Storm” and Player B responds by activating their Set “Threatening Roar.” Then, Player A responds to that by activating “Seven Tools of the Bandit.” In this case, Chain Links are stacked up as following. • Chain Link 3 “Seven Tools of the Bandit” Negates the effect of “Threatening Roar” Spell Speed
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: NO
+Explanation: ""Mystical Space Typhoon"" is a Quick-Play Spell Card with a Spell Speed of 1. ""Royal Decree"" is a Continuous Trap Card with a Spell Speed of 2. Since ""Mystical Space Typhoon"" has a lower Spell Speed than ""Royal Decree"", Player A cannot chain it to the activation of ""Royal Decree"".","['13. Chains and Spell Speed', '13. Chains and Spell Speed', '13. Chains and Spell Speed']"
+case_002,"['Skill Drain', 'Jinzo']","Player A controls a face-up ""Skill Drain"". Player B summons ""Jinzo"".","Does ""Jinzo"" negate ""Skill Drain""?",NO,"""Skill Drain"" is already active and negates Jinzo's effect on summon.",NO,"""Jinzo"" does not negate ""Skill Drain"" because ""Jinzo"" is an Effect Monster that negates Trap effects on the field, while ""Skill Drain"" is a Trap Card that negates the effects of all face-up monsters. They function differently and do not directly interact with each other.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a face-up ""Skill Drain"". Player B summons ""Jinzo"".
+
+### Query
+Does ""Jinzo"" negate ""Skill Drain""?
+
+### Card Text
+Skill Drain:
+  Card Type: Trap Card
+  Sub-Type: Continuous
+  Text: Activate by paying 1000 LP. Negate the effects of all face-up monsters while they are face-up on the field (but their effects can still be activated).
+
+Jinzo:
+  Card Type: Effect Monster
+  Sub-Type: Machine
+  Text: Trap Cards, and their effects on the field, cannot be activated. Negate all Trap effects on the field.
+
+### Rulebook Context
+[Section: 14. Other Rules]
+an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate. • Restrictions The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. Same for “you can only Special Summon X once per turn” restrictions. • Trap Monsters Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+---
+
+[Section: 10. Trap Cards]
+found on Effect Monster Cards. Continuous Trap Cards can have effects that limit your opponent’s options, or that slowly damage your opponent’s LP. Counter Trap Cards: These Trap Cards are normally activated in response to the activation of other cards, and may have abilities like negating the effects of those cards. These types of Traps are effective against Normal Spell Cards or Normal Trap Cards, which are otherwise hard to stop, however many Counter Trap Cards require a cost to activate them. • The Difference between Set Spell Cards and Set Trap Cards: Spell Cards can be Set face-down on the ﬁeld like Trap Cards. However, the rules for the two types of cards are different. Spell Cards can be activated during the Main Phases even in the same turn that you Set them (except for Quick-Play Spell Cards). Setting them does not allow you to use them on your opponent’s turn; they still can only be activated during your Main Phase. You can Set a Spell Card face-down on the ﬁeld to bluff your opponent into thinking you have a powerful Trap.
+
+---
+
+[Section: 15. Glossary]
+NOT considered “destroyed.” • Discard Discard means to send a card from your hand to the Graveyard. This can happen because of a card effect or by adjusting the number of cards in your hand during the End Phase. • Effects of Cards The effect of a card is the special ability written on it, like the effect of a Spell, Trap, or Effect Monster. Costs that are needed to activate an ability are not part of the effect. The conditions that describe how to play a “Special Summon Monster” are also not an effect. • Equip Cards In addition to Equip Spell Cards, sometimes Trap Cards or Monster Cards can become equipped to a monster. Equipped Traps remain Trap Cards, but equipped monsters are considered to be Equip Spells. The term “Equip Card” includes all 3 kinds (standard Equip Spells, equipped Traps, and monsters equipped to other monsters). If a Monster Card is equipped to another monster, it remains equipped to that monster and cannot be moved to a different target, even by card effects that would normally be able to do so. EXCEPTION: Union monsters equipped by their own effects can be moved by appropriate card effects. • Equipped Monster A monster that is equipped with an Equip Card is an “equipped monster.” When this monster is destroyed or ﬂipped face-down, the equipped card loses its target, and is destroyed and sent to the Graveyard. • Excavate When a card says to “excavate” cards from your Deck, you reveal those cards to both players. Then, before you do anything else, apply the instructions from the card effect that excavated them. Cards that are being excavated are still treated as being in the Deck until sent elsewhere by the card instructions. • Original ATK (or DEF) The Original ATK
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: ""Jinzo"" does not negate ""Skill Drain"" because ""Jinzo"" is an Effect Monster that negates Trap effects on the field, while ""Skill Drain"" is a Trap Card that negates the effects of all face-up monsters. They function differently and do not directly interact with each other.","['14. Other Rules', '10. Trap Cards', '15. Glossary']"
+case_003,"['Geomathmech Final Sigma', 'Gameciel, the Sea Turtle Kaiju']","Player A controls ""Geomathmech Final Sigma"" in the Extra Monster Zone. Player B have ""Gameciel, the Sea Turtle Kaiju"" in their hand.","Can ""Geomathmech Final Sigma"" be Tributed for the special summon of ""Gameciel, the Sea Turtle Kaiju""?",YES,"""Geomathmech Final Sigma"" can be tributed as cost to activate an effect, like the special summon of ""Gameciel, the Sea Turtle Kaiju""",NO,"""Geomathmech Final Sigma"" is a Synchro Monster and cannot be Tributed for the Special Summon of ""Gameciel, the Sea Turtle Kaiju"". Synchro Monsters are Special Summoned using a Synchro Monster Card and the required Synchro Materials, not by Tributing monsters.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Geomathmech Final Sigma"" in the Extra Monster Zone. Player B have ""Gameciel, the Sea Turtle Kaiju"" in their hand.
+
+### Query
+Can ""Geomathmech Final Sigma"" be Tributed for the special summon of ""Gameciel, the Sea Turtle Kaiju""?
+
+### Card Text
+Geomathmech Final Sigma:
+  Card Type: Synchro Monster
+  Sub-Type: Cyberse
+  Text: 1 Tuner + 1+ non-Tuner monsters
+Unaffected by card effects, except ""Mathmech"" cards, while in the Extra Monster Zone. If this card in the Extra Monster Zone battles an opponent's monster, any battle damage it inflicts to your opponent is doubled. If this card is destroyed by battle, or if this card in its owner's possession is destroyed by an opponent's card effect: You can add 1 ""Mathmech"" card from your Deck to your hand. You can only use this effect of ""Geomathmech Final Sigma"" once per turn.
+
+Gameciel, the Sea Turtle Kaiju:
+  Card Type: Effect Monster
+  Sub-Type: Aqua
+  Text: You can Special Summon this card (from your hand) to your opponent's field in Attack Position, by Tributing 1 monster they control. If your opponent controls a ""Kaiju"" monster, you can Special Summon this card (from your hand) in Attack Position. You can only control 1 ""Kaiju"" monster. When your opponent activates a card or effect, except ""Gameciel, the Sea Turtle Kaiju"" (Quick Effect): You can remove 2 Kaiju Counters from anywhere on the field; negate the activation, and if you do, banish that card.
+
+### Rulebook Context
+[Section: 8. Summoning Monster Cards]
+face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of these during a turn as you want: • Flip Summon You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. This is called a Flip Summon. When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. You cannot use most monsters’ effects until they are face-up. • Special Summon Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. This is called a Special Summon. Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position. • Special Summon with a Card’s Effect Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. This is different from “Special Summon Monsters.” You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst,
+
+---
+
+[Section: 8. Summoning Monster Cards]
+Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+---
+
+[Section: 7. RITUAL MONSTERS]
+Ritual Monsters are special monsters that are Special Summoned with a speciﬁc Ritual Spell Card, along with a required Tribute. Ritual Monster Cards are placed in the Main Deck and cannot be Summoned unless you have all the proper cards together in your hand or on the ﬁeld. Ritual Monsters generally have high ATK and DEF and some have special abilities, just like Fusion Monsters. HOW TO RITUAL SUMMON: When you have a Ritual Spell Card, along with the matching Ritual Monster Card, in your hand, along with the required Tribute (as listed on the Ritual Spell Card), you can activate the Ritual Spell Card, placing it in the Spell & Trap Zone. If the activation of the Ritual Spell Card is successful, Tribute monsters by sending them from your hand or the ﬁeld to the Graveyard. The Ritual Spell Card will list the required amount to Tribute. After sending the Tributed monsters to the Graveyard, play the Ritual Monster Card in your Main Monster Zone in either face-up Attack or Defense Position. Finally, place the Ritual Spell Card in the Graveyard.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: ""Geomathmech Final Sigma"" is a Synchro Monster and cannot be Tributed for the Special Summon of ""Gameciel, the Sea Turtle Kaiju"". Synchro Monsters are Special Summoned using a Synchro Monster Card and the required Synchro Materials, not by Tributing monsters.","['8. Summoning Monster Cards', '8. Summoning Monster Cards', '7. RITUAL MONSTERS']"
+case_004,"['Geomathmech Final Sigma', 'The Monarchs Stormforth']","Player A controls ""Geomathmech Final Sigma"" in the Extra Monster Zone. Player B activates ""The Monarchs Stormforth"".","Can ""Geomathmech Final Sigma"" be Tributed by the effect of ""The Monarchs Stormforth""?",NO,"""Geomathmech Final Sigma"" can not be tributed by the effect of cards, except ""Mathmech"" cards, while in the Extra Monster Zone.",NO,"""Geomathmech Final Sigma"" is a Synchro Monster and was not properly Special Summoned before being in the Extra Monster Zone. Therefore, it cannot be Tributed by the effect of ""The Monarchs Stormforth"".","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Geomathmech Final Sigma"" in the Extra Monster Zone. Player B activates ""The Monarchs Stormforth"".
+
+### Query
+Can ""Geomathmech Final Sigma"" be Tributed by the effect of ""The Monarchs Stormforth""?
+
+### Card Text
+Geomathmech Final Sigma:
+  Card Type: Synchro Monster
+  Sub-Type: Cyberse
+  Text: 1 Tuner + 1+ non-Tuner monsters
+Unaffected by card effects, except ""Mathmech"" cards, while in the Extra Monster Zone. If this card in the Extra Monster Zone battles an opponent's monster, any battle damage it inflicts to your opponent is doubled. If this card is destroyed by battle, or if this card in its owner's possession is destroyed by an opponent's card effect: You can add 1 ""Mathmech"" card from your Deck to your hand. You can only use this effect of ""Geomathmech Final Sigma"" once per turn.
+
+The Monarchs Stormforth:
+  Card Type: Spell Card
+  Sub-Type: Quick-Play
+  Text: Once during this turn, if you would Tribute a monster for a Tribute Summon, you can Tribute 1 monster your opponent controls even though you do not control it. You can only activate 1 ""The Monarchs Stormforth"" per turn. During the turn you activate this card, you cannot Special Summon monsters from the Extra Deck.
+
+### Rulebook Context
+[Section: 8. Summoning Monster Cards]
+Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+---
+
+[Section: 8. Summoning Monster Cards]
+face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of these during a turn as you want: • Flip Summon You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. This is called a Flip Summon. When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. You cannot use most monsters’ effects until they are face-up. • Special Summon Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. This is called a Special Summon. Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position. • Special Summon with a Card’s Effect Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. This is different from “Special Summon Monsters.” You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst,
+
+---
+
+[Section: 7. RITUAL MONSTERS]
+Ritual Monsters are special monsters that are Special Summoned with a speciﬁc Ritual Spell Card, along with a required Tribute. Ritual Monster Cards are placed in the Main Deck and cannot be Summoned unless you have all the proper cards together in your hand or on the ﬁeld. Ritual Monsters generally have high ATK and DEF and some have special abilities, just like Fusion Monsters. HOW TO RITUAL SUMMON: When you have a Ritual Spell Card, along with the matching Ritual Monster Card, in your hand, along with the required Tribute (as listed on the Ritual Spell Card), you can activate the Ritual Spell Card, placing it in the Spell & Trap Zone. If the activation of the Ritual Spell Card is successful, Tribute monsters by sending them from your hand or the ﬁeld to the Graveyard. The Ritual Spell Card will list the required amount to Tribute. After sending the Tributed monsters to the Graveyard, play the Ritual Monster Card in your Main Monster Zone in either face-up Attack or Defense Position. Finally, place the Ritual Spell Card in the Graveyard.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: ""Geomathmech Final Sigma"" is a Synchro Monster and was not properly Special Summoned before being in the Extra Monster Zone. Therefore, it cannot be Tributed by the effect of ""The Monarchs Stormforth"".","['8. Summoning Monster Cards', '8. Summoning Monster Cards', '7. RITUAL MONSTERS']"
+case_005,['Mathmech Sigma'],"Player A special summons ""Mathmech Sigma"" by its own effect and it is then used to summon an Xyz monster.","Is ""Mathmech Sigma"" still banished when it is detached as Xyz material?",NO,"Since ""Mathmech Sigma"" was used as material for an Xyz summon it is no longer treated as a card on the field, and is sent to the Graveyard.",NO,"When ""Mathmech Sigma"" is detached as Xyz material, it is not sent to the Graveyard, but remains attached to the Xyz monster as an Xyz material. Therefore, it is not considered to have left the field and its banish effect does not activate.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A special summons ""Mathmech Sigma"" by its own effect and it is then used to summon an Xyz monster.
+
+### Query
+Is ""Mathmech Sigma"" still banished when it is detached as Xyz material?
+
+### Card Text
+Mathmech Sigma:
+  Card Type: Tuner Monster
+  Sub-Type: Cyberse
+  Text: If you control no monsters in the Extra Monster Zone, while this card is in your hand or GY: You can Special Summon this card, but banish it when it leaves the field, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Cyberse monsters. You can only use this effect of ""Mathmech Sigma"" once per turn. If this card you control is used as Synchro Material for a ""Mathmech"" monster, you can treat it as a non-Tuner.
+
+### Rulebook Context
+[Section: 14. Other Rules]
+an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate. • Restrictions The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. Same for “you can only Special Summon X once per turn” restrictions. • Trap Monsters Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+---
+
+[Section: 4. XYZ MONSTERS]
+Xyz Monsters (pronounced “ik-seez”) are a powerful kind of monster! You can Summon an Xyz Monster whenever you control monsters that are the same Level. Xyz Monsters start in your Extra Deck, not in your Main Deck, and wait for you to call them into action. Materials needed for an Xyz Summon: Xyz Monster’s Rank - This is the Rank of your Xyz Monster. Xyz Monsters have Ranks instead of Levels. Stronger Xyz Monsters have higher Ranks. This is a Rank 4 Xyz Monster. Xyz Materials - These are the Xyz Materials you need to Summon this monster. You use 2 Level 4 Monsters as the Xyz Materials to Summon this monster. Xyz Materials must be face-up before you can use them. HOW TO XYZ SUMMON: Xyz Summoning is your cool and easy way to Special Summon Xyz Monsters from your Extra Deck. Here’s how to do it! Choose an Xyz Monster from your Extra Deck that you have the right Xyz Materials for. The Xyz Materials should be face-up on your ﬁeld. During your Main Phase, declare that you are Xyz Summoning and stack the Xyz Materials on top of each other. Take the Xyz Monster from your Extra Deck and put it on top of the stacked Xyz Materials in the Extra Monster Zone or in the Main Monster Zone in face-up Attack or Defense Position. When an Xyz Monster tells you to “detach” a material, take one of the stacked Xyz Material cards beneath your Xyz Monster and put it in the Graveyard.
+
+---
+
+[Section: 8. Summoning Monster Cards]
+Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: When ""Mathmech Sigma"" is detached as Xyz material, it is not sent to the Graveyard, but remains attached to the Xyz monster as an Xyz material. Therefore, it is not considered to have left the field and its banish effect does not activate.","['14. Other Rules', '4. XYZ MONSTERS', '8. Summoning Monster Cards']"
+case_006,['Primathmech Laplacian'],"Player A Xyz summons ""Primathmech Laplacian"" and uses its trigger effect, detaching 3 materials.",Does the trigger effect of Primathmech Laplacian target?,NO,"No, it does not. Cards to be sent to the Graveyard are chosen at resolution.",NO,The trigger effect of Primathmech Laplacian does not target. It is an ability that resolves when the monster is Xyz Summoned and allows the player to choose which effects to activate from a list.,"You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A Xyz summons ""Primathmech Laplacian"" and uses its trigger effect, detaching 3 materials.
+
+### Query
+Does the trigger effect of Primathmech Laplacian target?
+
+### Card Text
+Primathmech Laplacian:
+  Card Type: XYZ Monster
+  Sub-Type: Cyberse
+  Text: 3 Level 4 monsters
+If a ""Mathmech"" card(s) you control would be destroyed by card effect, you can detach 1 material from this card instead. If this card is Xyz Summoned: You can detach up to 3 materials from it, then choose that many effects (you cannot choose the same effect twice, and you resolve them in the listed order, skipping any that were not chosen);
+● Send 1 random card from your opponent's hand to the GY. ● Send 1 monster your opponent controls to the GY. ● Send 1 Spell/Trap your opponent controls to the GY.
+You can only use this effect of ""Primathmech Laplacian"" once per turn.
+
+### Rulebook Context
+[Section: 14. Other Rules]
+an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate. • Restrictions The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. Same for “you can only Special Summon X once per turn” restrictions. • Trap Monsters Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+---
+
+[Section: 2. LINK MONSTERS]
+If 2 Extra Monster Zones are available, you can choose either one to Summon your monster. If there is a Link Monster already on the ﬁeld, you can Link Summon a monster in one of your zones it points to. LINK MONSTER BONUSES: Link Monsters already on the ﬁeld make great material! Normally, 1 monster equals 1 Link Material. But when you use a Link Monster as material for another Link Summon, you can count it as either 1 monster, or as a number of monsters equal to its Link Rating. For example, if you want to Summon a Link 3 monster that requires 2 or more materials in its “recipe”, you can either use 3 monsters (each counts as 1 material) or else a Link 2 Link Monster (counts as 1 or 2 materials) and a second monster (counts as 1 material). MORE ABOUT LINK MONSTERS: Link Monsters have no DEF and cannot ever be in Defense Position. They can’t be changed to Defense Position by a card effect. They can’t even be ﬂipped into face-down Defense Position. If your opponent has a monster in the Extra Monster Zone, it’s still a monster they control so you can’t attack directly. You have to battle and destroy all their monsters ﬁrst, including the one in the Extra Monster Zone. If you take control of your opponent’s monster in the Extra Monster Zone, it moves to your Main Monster Zone. When it goes back to your opponent, it goes to their Main Monster Zone, not the Extra Monster Zone. As long as the materials meet the requirements of the Link Monster you want to Summon, you can use a Token or Trap Card that is treated as a monster as the Link Material. Remember that when you Link Summon, you need
+
+---
+
+[Section: 2. LINK MONSTERS]
+Main Monster Zone, not the Extra Monster Zone. As long as the materials meet the requirements of the Link Monster you want to Summon, you can use a Token or Trap Card that is treated as a monster as the Link Material. Remember that when you Link Summon, you need to meet 3 goals: • The amount of materials you use matches the Link Rating (Link Monsters count as 1 OR their own Link Rating). • The number of materials you use meets the number speciﬁed in the materials line or “recipe”. • The materials match any other requirements in the materials line (such as only Effect Monsters, or only a speciﬁc Type of monster).
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: The trigger effect of Primathmech Laplacian does not target. It is an ability that resolves when the monster is Xyz Summoned and allows the player to choose which effects to activate from a list.","['14. Other Rules', '2. LINK MONSTERS', '2. LINK MONSTERS']"
+case_007,"['Geomathmech Magma', 'Solemn Judgment']","Player A Synchro summons ""Geomathmech Magma"". Player B activates ""Solemn Judgment"" to negate the summon and destroys ""Geomathmech Magma"".","Can the search effect of ""Geomathmech Magma"" be activated?",YES,"""Geomathmech Magma"" says ""this card in its owner possession..."" so the search effect can be activated whenever ""Geomathmech Magma"" is destroyed, even if it was not properly summoned first.",NO,"The effect of ""Geomathmech Magma"" that allows the player to add a ""Mathmech"" card from their deck to their hand when it is destroyed can only be activated when the card is actually destroyed. Since ""Solemn Judgment"" negates the summon of ""Geomathmech Magma"" and destroys it, the effect cannot be activated.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A Synchro summons ""Geomathmech Magma"". Player B activates ""Solemn Judgment"" to negate the summon and destroys ""Geomathmech Magma"".
+
+### Query
+Can the search effect of ""Geomathmech Magma"" be activated?
+
+### Card Text
+Geomathmech Magma:
+  Card Type: Synchro Tuner Monster
+  Sub-Type: Cyberse
+  Text: 1 Tuner + 1+ non-Tuner monsters
+When this card destroys a monster by battle: You can target up to 2 cards your opponent controls; destroy them. If this card is destroyed by battle, or if this card in its owner's possession is destroyed by an opponent's card effect: You can add 1 ""Mathmech"" Spell/Trap from your Deck to your hand. You can only use each effect of ""Geomathmech Magma"" once per turn.
+
+Solemn Judgment:
+  Card Type: Trap Card
+  Sub-Type: Counter
+  Text: When a monster(s) would be Summoned, OR a Spell/Trap Card is activated: Pay half your LP; negate the Summon or activation, and if you do, destroy that card.
+
+### Rulebook Context
+[Section: 15. Glossary]
+reveal those cards to both players. Then, before you do anything else, apply the instructions from the card effect that excavated them. Cards that are being excavated are still treated as being in the Deck until sent elsewhere by the card instructions. • Original ATK (or DEF) The Original ATK (or DEF) is the number of ATK (or DEF) points printed on the Monster Card. This does not include an increase from an Equip Spell Card or other card effect. • Pay a Cost To pay a cost is an action required by a player in order to activate a card, an effect, or to Summon a monster. Tributing to Tribute Summon a Level 5 monster is an example of a cost. Other common costs are discarding, paying LP, or banishing cards. You have to pay any costs before you declare the activation of the card. Even if the activation of the card is negated, you cannot get a refund of the cost that you have paid. • Piercing Battle Damage Some monsters can inﬂict piercing battle damage when they attack a Defense Position monster. This means that you inﬂict damage to your opponent’s LP equal to the difference between the attacking monster’s ATK and the defending monster’s DEF. • Random When a card effect says to choose a card randomly, there is no ofﬁcial way of doing so, it is ﬁne as long as neither player has a way of knowing which card is being chosen. • Reveal When an effect says to reveal a card, you show it to both players. You may have to reveal a face-down card, a card from your hand, or from the top of your Deck. Revealing a card does not activate the card or its Flip effect. Normally, revealed cards are returned
+
+---
+
+[Section: 15. Glossary]
+NOT considered “destroyed.” • Discard Discard means to send a card from your hand to the Graveyard. This can happen because of a card effect or by adjusting the number of cards in your hand during the End Phase. • Effects of Cards The effect of a card is the special ability written on it, like the effect of a Spell, Trap, or Effect Monster. Costs that are needed to activate an ability are not part of the effect. The conditions that describe how to play a “Special Summon Monster” are also not an effect. • Equip Cards In addition to Equip Spell Cards, sometimes Trap Cards or Monster Cards can become equipped to a monster. Equipped Traps remain Trap Cards, but equipped monsters are considered to be Equip Spells. The term “Equip Card” includes all 3 kinds (standard Equip Spells, equipped Traps, and monsters equipped to other monsters). If a Monster Card is equipped to another monster, it remains equipped to that monster and cannot be moved to a different target, even by card effects that would normally be able to do so. EXCEPTION: Union monsters equipped by their own effects can be moved by appropriate card effects. • Equipped Monster A monster that is equipped with an Equip Card is an “equipped monster.” When this monster is destroyed or ﬂipped face-down, the equipped card loses its target, and is destroyed and sent to the Graveyard. • Excavate When a card says to “excavate” cards from your Deck, you reveal those cards to both players. Then, before you do anything else, apply the instructions from the card effect that excavated them. Cards that are being excavated are still treated as being in the Deck until sent elsewhere by the card instructions. • Original ATK (or DEF) The Original ATK
+
+---
+
+[Section: 14. Other Rules]
+an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate. • Restrictions The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. Same for “you can only Special Summon X once per turn” restrictions. • Trap Monsters Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Decision
+Decision: NO
+
+### Explanation
+Explanation: The effect of ""Geomathmech Magma"" that allows the player to add a ""Mathmech"" card from their deck to their hand when it is destroyed can only be activated when the card is actually destroyed. Since ""Solemn Judgment"" negates the summon of ""Geomathmech Magma"" and destroys it, the effect cannot be activated.","['15. Glossary', '15. Glossary', '14. Other Rules']"
+case_008,['Mathmech Induction'],"Player A controls a set ""Mathmech Induction"" and has declared an attack.","Can ""Mathmech Induction"" be activated during the Damage Step?",YES,"""Mathmech Induction"" can be activated at the Start of the Damage Step before performing Damage calculation",NO,"Mathmech Induction is a Continuous Trap Card, and according to the rulebook, Continuous Trap Cards cannot be activated during the Damage Step.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a set ""Mathmech Induction"" and has declared an attack.
+
+### Query
+Can ""Mathmech Induction"" be activated during the Damage Step?
+
+### Card Text
+Mathmech Induction:
+  Card Type: Trap Card
+  Sub-Type: Continuous
+  Text: All Cyberse monsters you control gain 500 ATK. If you control a ""Mathmech"" monster: You can send this face-up card from the field to the GY, then target 1 card your opponent controls; destroy it. You can only use this effect of ""Mathmech Induction"" once per turn.
+
+### Rulebook Context
+[Section: 11. Turn Structure]
+choose to attack with the same monster again, or choose to attack with a different monster, or choose not to attack at all. Note that if you attack with a different monster, the ﬁrst monster is still considered to have declared an attack, and it cannot attack again this turn. DAMAGE STEP RULES During the Damage Step, you can only activate Counter Trap Cards, or cards with effects that directly change a monster’s ATK or DEF. Also, these cards can only be activated up until the start of damage calculation. • Limitations on Activating Cards If you attack a face-down Defense Position monster, ﬂip the card to face-up Defense Position in the Damage Step. Now you can see the monster’s DEF and then calculate damage. • Attacking a Face-Down Card When an attacked monster is ﬂipped face-up, any Flip effects are activated and resolved after damage calculation. If you need to select a monster for the Flip effect to target, you cannot target a monster that has already been destroyed during damage calculation. • Activation of a Flip Effect During the Damage Step, there are limits on what cards you can activate. Also, during the Damage Step, Flip effects resolve a bit differently than they normally do. Main Phase 2: If you conducted your Battle Phase, your turn moves to Main Phase 2 afterwards. The actions a player can perform in this phase are the same as in Main Phase 1. However, if the player already did something in Main Phase 1 that has a limit to the number of times it can be done, the player cannot do it again in Main Phase 2. Consider if you want to activate and Set Spell & Trap Cards, or Summon or Set a monster (if you didn’t do that in Main
+
+---
+
+[Section: 11. Turn Structure]
+starts the Battle Phase. The turn player shouldannounce “I’m entering the Battle Phase.” Remember, the player who goes ﬁrst cannot conduct a Battle Phase in their very ﬁrst turn. • Battle Step: Select 1 monster on your side of the ﬁeld to attack with, and 1 of your opponent’s monsters as your attack target, and then declare the attack. If your opponent does not have any monsters on the ﬁeld, you can attack directly. Play then proceeds to the Damage Step. Afterwards, the attacking player returns to the Battle Step, and repeats this procedure. Each face-up Attack Position monster you control is allowed 1 attack per turn. You do not have to attack with a monster if you don’t want to. • Damage Step: In this step, the players calculate the result of the battle and whatever damage is done. After ﬁnishing the Damage Step, return to the Battle Step. • End Step: After you’ve resolved all your battles by repeating the Battle and Damage Steps, and you have no more monsters you want to attack with, announce to your opponent that you are ending your Battle Phase. Replay Rules during the Battle Step: After you’ve announced your attacking monster and the attack target monster during a Battle Step, the attack target might be removed from the ﬁeld, or a new monster may be played onto the opponent’s side of the ﬁeld before the Damage Step, due to a card’s effect. This causes a “Replay.” When this occurs, you can choose to attack with the same monster again, or choose to attack with a different monster, or choose not to attack at all. Note that if you attack with a different monster, the ﬁrst monster is still considered to have declared an attack, and it cannot attack again this turn.
+
+---
+
+[Section: 11. Turn Structure]
+face-up monster to face-up Attack or Defense Position. You can change the position of each monster you control, except in three cases. 1. You cannot change the battle position of a monster that was played onto the ﬁeld this turn. 2. You cannot change it in Main Phase 2 if the monster attacked during the Battle Phase. 3. You cannot change it if you have already changed its battle position once this turn. • Active a Card or Effect You can activate Spell and Trap Cards, or the effects of Spell, Trap, or Effect Monster Cards as many times as you want during this phase, as long as you can keep paying any costs involved. • Set Spell Cards and Trap Cards You can Set Spell and Trap Cards face-down in your Spell & Trap Zone during this phase, as long as you have space. Battle Phase: Now it’s time to battle with your Monster Cards! This phase is divided into steps. You do not have to conduct a Battle Phase every turn, even if you have a monster on the ﬁeld. IMPORTANT: The player who goes ﬁrst cannot conduct their Battle Phase on their ﬁrst turn. Possible Actions in this Phase. • Battle with monsters • Activate Trap Cards and Quick-Play Spell Cards The Battle Phase is split into 4 steps and is conducted in the following order: Note: The Battle Step and Damage Step are repeated each time you attack with a monster. • Start step. This step starts the Battle Phase. The turn player shouldannounce “I’m entering the Battle Phase.” Remember, the player who goes ﬁrst cannot conduct a Battle Phase in their very ﬁrst turn. • Battle Step: Select 1 monster on your side of the ﬁeld to attack with, and 1 of your opponent’s monsters
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: Mathmech Induction is a Continuous Trap Card, and according to the rulebook, Continuous Trap Cards cannot be activated during the Damage Step.","['11. Turn Structure', '11. Turn Structure', '11. Turn Structure']"
+case_009,"['Mathmech Superfactorial', 'D.D. Crow']","Player A activates the second effect of ""Mathmech Superfactorial"", targeting 3 ""Mathmech"" monsters in the Graveyard to perform an Xyz summon. Player B chains ""D.D. Crow"", banishing one of the targets.","Will the effect of ""Mathmech Superfactorial"" resolve?",YES,"If one of the targeted monsters no longer exists in the Graveyard when resolving a ""Mathmech Superfactorial"" that was activated targeting three monsters, the two remaining monsters are Special Summoned. Then, if there is an Xyz Monster in your Extra Deck that can be Xyz Summoned using those two Special Summoned monsters, immediately after ""Mathmech Superfactorial"" resolves, Xyz Summon such a monster.",NO,"Since one of the targeted monsters for the Xyz Summon was banished by ""D.D. Crow"", Player A cannot perform the Xyz Summon with the effect of ""Mathmech Superfactorial"". The effect of ""Mathmech Superfactorial"" requires that all targeted monsters are in the Graveyard for the Xyz Summon to occur. Since one of the monsters is now in the Graveyard due to being banished, rather than being sent there by the effect of ""Mathmech Superfactorial"", the effect cannot resolve.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A activates the second effect of ""Mathmech Superfactorial"", targeting 3 ""Mathmech"" monsters in the Graveyard to perform an Xyz summon. Player B chains ""D.D. Crow"", banishing one of the targets.
+
+### Query
+Will the effect of ""Mathmech Superfactorial"" resolve?
+
+### Card Text
+Mathmech Superfactorial:
+  Card Type: Trap Card
+  Sub-Type: Normal
+  Text: Target up to 3 ""Mathmech"" monsters in your GY with different names, then activate 1 of these effects;
+● Special Summon them, but their effects are negated, then, immediately after this effect resolves, Synchro Summon 1 ""Mathmech"" Synchro Monster using only those monsters, and shuffle the materials into the Deck instead of sending them to the GY.
+● Special Summon them, but their effects are negated, then, immediately after this effect resolves, Xyz Summon 1 ""Mathmech"" Xyz Monster using only those monsters.
+You can only activate 1 ""Mathmech Superfactorial"" per turn.
+
+D.D. Crow:
+  Card Type: Effect Monster
+  Sub-Type: Winged Beast
+  Text: (Quick Effect): You can discard this card to the GY, then target 1 card in your opponent's GY; banish that target.
+
+### Rulebook Context
+[Section: 14. Other Rules]
+an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate. • Restrictions The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. Same for “you can only Special Summon X once per turn” restrictions. • Trap Monsters Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+---
+
+[Section: 8. Summoning Monster Cards]
+Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+---
+
+[Section: 4. XYZ MONSTERS]
+Xyz Monsters (pronounced “ik-seez”) are a powerful kind of monster! You can Summon an Xyz Monster whenever you control monsters that are the same Level. Xyz Monsters start in your Extra Deck, not in your Main Deck, and wait for you to call them into action. Materials needed for an Xyz Summon: Xyz Monster’s Rank - This is the Rank of your Xyz Monster. Xyz Monsters have Ranks instead of Levels. Stronger Xyz Monsters have higher Ranks. This is a Rank 4 Xyz Monster. Xyz Materials - These are the Xyz Materials you need to Summon this monster. You use 2 Level 4 Monsters as the Xyz Materials to Summon this monster. Xyz Materials must be face-up before you can use them. HOW TO XYZ SUMMON: Xyz Summoning is your cool and easy way to Special Summon Xyz Monsters from your Extra Deck. Here’s how to do it! Choose an Xyz Monster from your Extra Deck that you have the right Xyz Materials for. The Xyz Materials should be face-up on your ﬁeld. During your Main Phase, declare that you are Xyz Summoning and stack the Xyz Materials on top of each other. Take the Xyz Monster from your Extra Deck and put it on top of the stacked Xyz Materials in the Extra Monster Zone or in the Main Monster Zone in face-up Attack or Defense Position. When an Xyz Monster tells you to “detach” a material, take one of the stacked Xyz Material cards beneath your Xyz Monster and put it in the Graveyard.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: Since one of the targeted monsters for the Xyz Summon was banished by ""D.D. Crow"", Player A cannot perform the Xyz Summon with the effect of ""Mathmech Superfactorial"". The effect of ""Mathmech Superfactorial"" requires that all targeted monsters are in the Graveyard for the Xyz Summon to occur. Since one of the monsters is now in the Graveyard due to being banished, rather than being sent there by the effect of ""Mathmech Superfactorial"", the effect cannot resolve.","['14. Other Rules', '8. Summoning Monster Cards', '4. XYZ MONSTERS']"
+case_010,['Mathmech Superfactorial'],"Player A activates ""Mathmech Superfactorial"".","Can Player A target a ""Mathmech"" Xyz monster in the Graveyard and special summon it?",NO,"You must be able to resolve ""Mathmech Superfactorial"" at activation: since a Xyz monster does not have a level it can not be used for a Synchro or Xyz summon and thus it is not a legal target.",NO,"The card text states that the ""Mathmech"" monsters are special summoned from the graveyard, but the rulebook context states that monsters cannot be special summoned from the graveyard unless they were properly special summoned first. Since the ""Mathmech"" monsters were not special summoned before being sent to the graveyard, they cannot be special summoned again using ""Mathmech Superfactorial"".","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A activates ""Mathmech Superfactorial"".
+
+### Query
+Can Player A target a ""Mathmech"" Xyz monster in the Graveyard and special summon it?
+
+### Card Text
+Mathmech Superfactorial:
+  Card Type: Trap Card
+  Sub-Type: Normal
+  Text: Target up to 3 ""Mathmech"" monsters in your GY with different names, then activate 1 of these effects;
+● Special Summon them, but their effects are negated, then, immediately after this effect resolves, Synchro Summon 1 ""Mathmech"" Synchro Monster using only those monsters, and shuffle the materials into the Deck instead of sending them to the GY.
+● Special Summon them, but their effects are negated, then, immediately after this effect resolves, Xyz Summon 1 ""Mathmech"" Xyz Monster using only those monsters.
+You can only activate 1 ""Mathmech Superfactorial"" per turn.
+
+### Rulebook Context
+[Section: 8. Summoning Monster Cards]
+Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+---
+
+[Section: 14. Other Rules]
+an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate. • Restrictions The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. Same for “you can only Special Summon X once per turn” restrictions. • Trap Monsters Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+---
+
+[Section: 4. XYZ MONSTERS]
+Xyz Monsters (pronounced “ik-seez”) are a powerful kind of monster! You can Summon an Xyz Monster whenever you control monsters that are the same Level. Xyz Monsters start in your Extra Deck, not in your Main Deck, and wait for you to call them into action. Materials needed for an Xyz Summon: Xyz Monster’s Rank - This is the Rank of your Xyz Monster. Xyz Monsters have Ranks instead of Levels. Stronger Xyz Monsters have higher Ranks. This is a Rank 4 Xyz Monster. Xyz Materials - These are the Xyz Materials you need to Summon this monster. You use 2 Level 4 Monsters as the Xyz Materials to Summon this monster. Xyz Materials must be face-up before you can use them. HOW TO XYZ SUMMON: Xyz Summoning is your cool and easy way to Special Summon Xyz Monsters from your Extra Deck. Here’s how to do it! Choose an Xyz Monster from your Extra Deck that you have the right Xyz Materials for. The Xyz Materials should be face-up on your ﬁeld. During your Main Phase, declare that you are Xyz Summoning and stack the Xyz Materials on top of each other. Take the Xyz Monster from your Extra Deck and put it on top of the stacked Xyz Materials in the Extra Monster Zone or in the Main Monster Zone in face-up Attack or Defense Position. When an Xyz Monster tells you to “detach” a material, take one of the stacked Xyz Material cards beneath your Xyz Monster and put it in the Graveyard.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: The card text states that the ""Mathmech"" monsters are special summoned from the graveyard, but the rulebook context states that monsters cannot be special summoned from the graveyard unless they were properly special summoned first. Since the ""Mathmech"" monsters were not special summoned before being sent to the graveyard, they cannot be special summoned again using ""Mathmech Superfactorial"".","['8. Summoning Monster Cards', '14. Other Rules', '4. XYZ MONSTERS']"
+case_011,"['Macro Cosmos', 'Mathmech Circular']","Player A controls a face-up ""Macro Cosmos"".","Can Player B activate the first effect of ""Mathmech Circular"" while ""Macro Cosmos"" is face up on the field?",NO,"Since ""Macro Cosmos"" banishes all cards sent to the Graveyard, Player B are not able to pay the cost required by ""Mathmech Circular"" for summoning itself.",NO,"The effect of ""Mathmech Circular"" that allows it to be Special Summoned from the hand requires the player to send a ""Mathmech"" monster from their Deck to the Graveyard. However, while ""Macro Cosmos"" is face-up on the field, any card sent to the Graveyard is banished instead, preventing the player from sending a ""Mathmech"" monster to the Graveyard and thus preventing the activation of the effect that allows the Special Summon of ""Mathmech Circular"".","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a face-up ""Macro Cosmos"".
+
+### Query
+Can Player B activate the first effect of ""Mathmech Circular"" while ""Macro Cosmos"" is face up on the field?
+
+### Card Text
+Macro Cosmos:
+  Card Type: Trap Card
+  Sub-Type: Continuous
+  Text: When this card resolves: You can Special Summon 1 ""Helios - The Primordial Sun"" from your hand or Deck. While this card is face-up on the field, any card sent to the Graveyard is banished instead.
+
+Mathmech Circular:
+  Card Type: Effect Monster
+  Sub-Type: Cyberse
+  Text: You can send 1 ""Mathmech"" monster, except ""Mathmech Circular"", from your Deck to your GY; Special Summon this card from your hand, also you can only attack with 1 monster for the rest of this turn. If a ""Mathmech"" monster is Normal or Special Summoned to your field while you control this monster (except during the Damage Step): You can add 1 ""Mathmech"" Spell/Trap from your Deck to your hand. You can only use each effect of ""Mathmech Circular"" once per turn.
+
+### Rulebook Context
+[Section: 14. Other Rules]
+an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate. • Restrictions The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. Same for “you can only Special Summon X once per turn” restrictions. • Trap Monsters Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+---
+
+[Section: 8. Summoning Monster Cards]
+face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of these during a turn as you want: • Flip Summon You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. This is called a Flip Summon. When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. You cannot use most monsters’ effects until they are face-up. • Special Summon Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. This is called a Special Summon. Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position. • Special Summon with a Card’s Effect Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. This is different from “Special Summon Monsters.” You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst,
+
+---
+
+[Section: 1. Effect Monsters]
+1 card in your Graveyard; Special Summon it. Trigger Effect: These effects are activated at speciﬁc times, such as “during the Standby Phase” or “when this monster is destroyed”. These cards can make for some great combos, but it’s easier for your opponent to predict what will happen, so they might try to stop you. Example: When this card is destroyed by battle and sent to the Graveyard: Target 1 card on the ﬁeld; destroy that target. Flip Effect: Flip effect is a part of the Trigger Effect. This is an effect that is activated when a face-down card is ﬂipped face-up. This can happen when it is Flip Summoned, attacked while face-down, or ﬂipped face-up by a card effect. These effects start with the word “FLIP:” on the card. When you have a face-down monster, your opponent must be wary because they don’t know if it has a Flip effect or not. Example: FLIP: Draw 1 card.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: The effect of ""Mathmech Circular"" that allows it to be Special Summoned from the hand requires the player to send a ""Mathmech"" monster from their Deck to the Graveyard. However, while ""Macro Cosmos"" is face-up on the field, any card sent to the Graveyard is banished instead, preventing the player from sending a ""Mathmech"" monster to the Graveyard and thus preventing the activation of the effect that allows the Special Summon of ""Mathmech Circular"".","['14. Other Rules', '8. Summoning Monster Cards', '1. Effect Monsters']"
+case_012,"['Green Baboon, Defender of the Forest', 'Raigeki']","Player A controls a face-up Beast-Type monster. Player B activates ""Raigeki"" and destroys the Beast-Type monster.","Can Player A Special Summon multiple ""Green Baboon, Defender of the Forest""?",NO,"Even though the effect of ""Green Baboon, Defender of the Forest"" is not an Only once per chain effect, Player A cannot Special Summon multiple ""Green Baboon, Defender of the Forest"", even if Player A has multiple copies of ""Green Baboon, Defender of the Forest"" in their Hand/Graveyard.",NO,"Player A's Beast-Type monster was destroyed and sent to the Graveyard, but it was not properly Special Summoned before being destroyed. Therefore, Player A cannot Special Summon ""Green Baboon, Defender of the Forest"" using its effect.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a face-up Beast-Type monster. Player B activates ""Raigeki"" and destroys the Beast-Type monster.
+
+### Query
+Can Player A Special Summon multiple ""Green Baboon, Defender of the Forest""?
+
+### Card Text
+Green Baboon, Defender of the Forest:
+  Card Type: Effect Monster
+  Sub-Type: Beast
+  Text: If this card is in your hand or Graveyard when a face-up Beast-Type monster you control is destroyed and sent to the Graveyard (except during the Damage Step): You can pay 1000 Life Points; Special Summon this card.
+
+Raigeki:
+  Card Type: Spell Card
+  Sub-Type: Normal
+  Text: Destroy all monsters your opponent controls.
+
+### Rulebook Context
+[Section: 8. Summoning Monster Cards]
+There are several ways to play monsters onto the ﬁeld. These ways can be categorized into 2 groups: actions that can be done only once per turn, and actions that can be done multiple times per turn. You can do one of these once per turn: • Normal Summon This is the most common way to Summon a monster. Simply play a Monster Card from your hand onto the ﬁeld in face-up Attack Position. All Normal Monsters, and most Effect Monsters (unless they have a speciﬁc restriction), can be Summoned in this way. • Normal Set To play a Monster Card from your hand in face-down Defense Position is called a Normal Set. A monster Normal Set on the ﬁeld is NOT considered Summoned. It has been Normal Set, and can be Summoned with a Flip Summon or ﬂipped face-up by an attack or card effect. Remember, you can only Normal Summon OR Normal Set (Normal Summon/Set, in short), once per turn, so if you Normal Set a monster you cannot also Normal Summon a monster that turn. Note: You cannot play a monster from your hand onto the ﬁeld in face-up Defense Position. • Tribute Summon For monsters that are Level 5 or higher, you must Tribute at least 1 monster you control before the Normal Summon/Set. This is called a Tribute Summon. Monsters that are Level 5 or 6 require 1 Tribute and Monsters that are Level 7 or higher require 2 Tributes. If you Tribute Summon in face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of
+
+---
+
+[Section: 8. Summoning Monster Cards]
+Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+---
+
+[Section: 8. Summoning Monster Cards]
+face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of these during a turn as you want: • Flip Summon You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. This is called a Flip Summon. When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. You cannot use most monsters’ effects until they are face-up. • Special Summon Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. This is called a Special Summon. Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position. • Special Summon with a Card’s Effect Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. This is different from “Special Summon Monsters.” You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst,
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: NO
+Explanation: Player A's Beast-Type monster was destroyed and sent to the Graveyard, but it was not properly Special Summoned before being destroyed. Therefore, Player A cannot Special Summon ""Green Baboon, Defender of the Forest"" using its effect.","['8. Summoning Monster Cards', '8. Summoning Monster Cards', '8. Summoning Monster Cards']"
+case_013,"['Peten the Dark Clown', 'Soul Taker']","Player A's ""Peten the Dark Clown"" is destroyed by the effect of Player B's ""Soul Taker""","Can Player A activate the effect of ""Peten the Dark Clown""?",NO,"The effect of ""Peten the Dark Clown"" is a ""When...You can..."" effect, and misses timing due to the effect of ""Soul Taker"".",NO,"The effect of ""Peten the Dark Clown"" can only be activated when it is sent to the Graveyard. Since it is already in the Graveyard when it is destroyed by the effect of ""Soul Taker"", the effect cannot be activated.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A's ""Peten the Dark Clown"" is destroyed by the effect of Player B's ""Soul Taker""
+
+### Query
+Can Player A activate the effect of ""Peten the Dark Clown""?
+
+### Card Text
+Peten the Dark Clown:
+  Card Type: Effect Monster
+  Sub-Type: Spellcaster
+  Text: When this card is sent to your Graveyard: You can banish this card from your Graveyard; Special Summon 1 ""Peten the Dark Clown"" from your hand or Deck.
+
+Soul Taker:
+  Card Type: Spell Card
+  Sub-Type: Normal
+  Text: Target 1 face-up monster your opponent controls; destroy that target, then your opponent gains 1000 LP.
+
+### Rulebook Context
+[Section: 14. Other Rules]
+ﬁeld are treated as Normal Monsters. • Public Knowledge The number of cards in a player’s hand and Decks, the cards in their Graveyards, and each player’s current LP are all public knowledge and both players can verify these things at any time. If asked, you must answer these things to your opponent truthfully. You are allowed to pick up and verify the cards in your opponent’s Graveyard but you must ask their permission ﬁrst. Also, you may not change the order of the cards when verifying their Graveyard. • If both players conduct actions simultaneously For cases like “Each player targets 1 monster,” where both players resolve an effect simultaneously, the turn player resolves the effect ﬁrst. In this example, after the turn player makes their selection, the other player makes theirs. • When multiple cards are activated simultaneously If effects of Spell Speed 1 cards (like Trigger Effects) are activated at the same time, they will be resolved in a special Chain. This Chain is made starting with the turn player’s mandatory effects. If there is only 1 effect, that will be Chain Link 1. If there are 2 or more effects, the turn player builds the Chain starting with their mandatory effects, in any order. Then the opponent continues the Chain with their mandatory effects in any order. Afterwards, the turn player adds their optional effects in any order, and ﬁnally the opponent adds their optional effects in any order. • 0 ATK monsters Monsters with 0 ATK cannot destroy anything by battle. If two Attack Position monsters with 0 ATK battle each other, neither monster is destroyed. • Rules vs. Card Effects If there is a discrepancy between the basic rules and a card’s effect, the card effect takes precedence. For example, a monster can only
+
+---
+
+[Section: 1. Effect Monsters]
+An Effect Monster is a monster that has special abilities. The effects of these monsters are split into four categories: • Continuous Effect • Ignition Effect • Quick Effect • Trigger Effect (including Flip) Continuous Effect: This effect is active while the Effect Monster Card is face-up on the ﬁeld. The effect starts when the face-up monster appears on the ﬁeld, and ends once that monster is gone or is no longer face-up; there is no trigger for its activation. These monsters are most useful if you have a strategy to protect them while they are on the ﬁeld. Example: Monsters with 2000 or less ATK cannot declare an attack. Ignition Effect: You use this type of effect just by declaring its activation during your Main Phase. There are some Ignition Effects that have a cost to activate, like discarding cards from your hand, Tributing a monster, or paying LP. Because you can choose when to activate this type of effect, it’s easy to create combos with them. Example: You can Tribute this card, then target 1 monster on the ﬁeld; destroy that target. Quick Effect: These are special monster effects that you can activate even during your opponent’s turn. These types of effects have a Spell Speed of 2, even though all other monster effects have a Spell Speed of 1. Since it’s difﬁcult for your opponent to predict these cards, they can give them an unexpected surprise. Example: When an effect is activated (Quick Effect): You can target 1 card in your Graveyard; Special Summon it. Trigger Effect: These effects are activated at speciﬁc times, such as “during the Standby Phase” or “when this monster is destroyed”. These cards can make for some great combos, but it’s easier for your opponent to predict what will happen, so they
+
+---
+
+[Section: 1. Effect Monsters]
+1 card in your Graveyard; Special Summon it. Trigger Effect: These effects are activated at speciﬁc times, such as “during the Standby Phase” or “when this monster is destroyed”. These cards can make for some great combos, but it’s easier for your opponent to predict what will happen, so they might try to stop you. Example: When this card is destroyed by battle and sent to the Graveyard: Target 1 card on the ﬁeld; destroy that target. Flip Effect: Flip effect is a part of the Trigger Effect. This is an effect that is activated when a face-down card is ﬂipped face-up. This can happen when it is Flip Summoned, attacked while face-down, or ﬂipped face-up by a card effect. These effects start with the word “FLIP:” on the card. When you have a face-down monster, your opponent must be wary because they don’t know if it has a Flip effect or not. Example: FLIP: Draw 1 card.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: The effect of ""Peten the Dark Clown"" can only be activated when it is sent to the Graveyard. Since it is already in the Graveyard when it is destroyed by the effect of ""Soul Taker"", the effect cannot be activated.","['14. Other Rules', '1. Effect Monsters', '1. Effect Monsters']"
+case_014,"['Light and Darkness Dragon', 'Formula Synchron']","Player A controls ""Formula Synchron"". Player B. controls ""Light and Darkness Dragon"" with the following stats ATK/DEF 2800/2400, and tries to leave Main Phase 1 and enter the Battle Phase.","Can Player A activate the quick effect of ""Formula Synchron"" multiple times?",YES,"The quick effect of ""Formula Synchron"" can be activated multiple times, just not on the same chain, each activation is negated by the quick effect of ""Light and Darkness Dragon"" until it no longer can pay the cost to activate the quick effect",NO,"The quick effect of ""Formula Synchron"" can only be activated once per chain during the opponent's Main Phase. It cannot be activated multiple times in the same turn, even if the opponent leaves Main Phase 1 and enters the Battle Phase.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Formula Synchron"". Player B. controls ""Light and Darkness Dragon"" with the following stats ATK/DEF 2800/2400, and tries to leave Main Phase 1 and enter the Battle Phase.
+
+### Query
+Can Player A activate the quick effect of ""Formula Synchron"" multiple times?
+
+### Card Text
+Light and Darkness Dragon:
+  Card Type: Effect Monster
+  Sub-Type: Dragon
+  Text: Cannot be Special Summoned. While face-up on the field, this card is also DARK-Attribute. Once per Chain, during either player's turn, when a Spell Card, Trap Card, or monster effect is activated: This card loses exactly 500 ATK and DEF and that activation is negated. When this card is destroyed and sent to the Graveyard: Target 1 monster in your Graveyard (if possible); destroy all cards you control, also Special Summon that monster (if any).
+
+Formula Synchron:
+  Card Type: Synchro Tuner Monster
+  Sub-Type: Machine
+  Text: 1 Tuner + 1 non-Tuner monster
+When this card is Synchro Summoned: You can draw 1 card. Once per Chain, during your opponent's Main Phase, you can (Quick Effect): Immediately after this effect resolves, Synchro Summon using this card you control.
+
+### Rulebook Context
+[Section: 5. SYNCHRO MONSTERS]
+Synchro Monsters are placed in the Extra Deck, separate from the Main Deck. You can Special Summon a powerful Synchro Monster to the ﬁeld in an instant just by using the Levels of your monsters. They can be Synchro Summoned from the Extra Deck by sending 1 face-up “Tuner” monster and any number of face-up non-Tuner monsters from your ﬁeld to the Graveyard, when the sum of all their Levels is exactly equal to the Level of the Synchro Monster. TUNER MONSTERS FOR SYNCHRO SUMMON: In order to Synchro Summon a Synchro Monster, you need 1 Tuner (look for “Tuner” next to its Type). The Tuner monster and other face-up monsters you use for the Synchro Summon are called Synchro Materials. The sum of their Levels is the Level of Synchro Monster you can Summon. HOW TO SYNCHRO SUMMON: During your Main Phase, you can declare a Synchro Summon when the combined total Levels of 1 face-up Tuner monster and any number of other face-up monsters you control are equal to the Level of the Synchro Monster you want to Synchro Summon. After double-checking the Level of the Synchro Monster you want, send the face-up Synchro Materials from your ﬁeld to the Graveyard. After sending the Synchro Materials from the ﬁeld to the Graveyard, take the Synchro Monster from your Extra Deck and play it in the Extra Monster Zone or in the Main Monster Zone in face-up Attack or Defense Position.
+
+---
+
+[Section: 11. Turn Structure]
+A Duel progresses in a series of turns which are divided into phases. Draw Phase: This is the ﬁrst phase. The player whose turn it is (the “turn player”) draws 1 card from the top of their Deck. A player with no cards left in their Deck and unable to draw loses the Duel. After you draw, Trap Cards or Quick-Play Spell Cards can be activated before proceeding to the Standby Phase. IMPORTANT: The player who goes ﬁrst cannot draw during the Draw Phase of their ﬁrst turn. Standby Phase: Some cards have effects that activate, or costs you must pay, in the Standby Phase. If you do not have any of these cards on the ﬁeld, you can still activate Trap Cards or Quick-Play Spell Cards before moving on to your Main Phase 1. Main Phase 1: This is when you play most of your cards: you can Normal Summon, Set, or change the battle position of a monster, activate a card’s effect, and Set Spell and Trap Cards. These actions can be done in any order you want, but some actions have restrictions. Possible Actions in this Phase. • Summon or Set a Monster There is no limit to the number of times you can Flip Summon or Special Summon during a turn, but you can only Normal Summon or Set a monster (including a Tribute Summon) once per turn. • Change Your Monsters’ Battle Positions. This includes Flip Summoning a monster, or changing the position of a face-up monster to face-up Attack or Defense Position. You can change the position of each monster you control, except in three cases. 1. You cannot change the battle position of a monster that was played onto the ﬁeld this turn. 2. You cannot change it in Main Phase 2 if
+
+---
+
+[Section: 11. Turn Structure]
+Phase 1 that has a limit to the number of times it can be done, the player cannot do it again in Main Phase 2. Consider if you want to activate and Set Spell & Trap Cards, or Summon or Set a monster (if you didn’t do that in Main Phase 1) based on your situation after the Battle Phase. Use this phase to prepare for the opponent’s turn. Possible Actions in this Phase. • Summon or Set a monster • Change your monsters’ battle positions • Active a card or effect • Set Spell Cards and Trap Cards End Phase: Announce the end of your turn, and if there are any cards on the ﬁeld which say “…during the End Phase…” in their text, resolve those effects in this phase. If you have more than 6 cards in your hand at the end of this phase, select and discard cards to the Graveyard until you only have 6 cards in your hand. Actions in this Phase. • Resolve card effects whichactivate in this phase • Discard if you have more than 6 cards in hand Possible Other Actions in this Phase. • Activate Trap Cards and Quick-Play Spell Cards
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: The quick effect of ""Formula Synchron"" can only be activated once per chain during the opponent's Main Phase. It cannot be activated multiple times in the same turn, even if the opponent leaves Main Phase 1 and enters the Battle Phase.","['5. SYNCHRO MONSTERS', '11. Turn Structure', '11. Turn Structure']"
+case_015,"['Future Visions', 'Book of Moon']","Player A Normal Summons a monster, triggering the effect of Player B's ""Future Visions"". Player A chains ""Book of Moon"" targeting the Normal Summoned monster","Is the monster still banished by the effect of ""Future Vision""?",YES,"The monster still banished by the effect of ""Future Vision"" after being flipped face-down by ""Book of Moon"", since the target do not need to meet the target requirements at resolution, only when targeted.",NO,"The effect of ""Future Visions"" banishes the monster when it is Normal Summoned. ""Book of Moon"" changes the position of the monster, it does not change the status of the monster. Since the monster is no longer on the field when it is changed to face-down Defense Position by ""Book of Moon"", the effect of ""Future Visions"" does not activate and the monster is not banished.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A Normal Summons a monster, triggering the effect of Player B's ""Future Visions"". Player A chains ""Book of Moon"" targeting the Normal Summoned monster
+
+### Query
+Is the monster still banished by the effect of ""Future Vision""?
+
+### Card Text
+Future Visions:
+  Card Type: Spell Card
+  Sub-Type: Field
+  Text: Each time a monster is Normal Summoned: Target that monster; banish it. During the next Standby Phase of the player who controlled that monster: Return it to the field in face-up Attack Position.
+
+Book of Moon:
+  Card Type: Spell Card
+  Sub-Type: Quick-Play
+  Text: Target 1 face-up monster on the field; change that target to face-down Defense Position.
+
+### Rulebook Context
+[Section: 8. Summoning Monster Cards]
+face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of these during a turn as you want: • Flip Summon You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. This is called a Flip Summon. When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. You cannot use most monsters’ effects until they are face-up. • Special Summon Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. This is called a Special Summon. Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position. • Special Summon with a Card’s Effect Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. This is different from “Special Summon Monsters.” You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst,
+
+---
+
+[Section: 14. Other Rules]
+an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate. • Restrictions The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. Same for “you can only Special Summon X once per turn” restrictions. • Trap Monsters Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+---
+
+[Section: 8. Summoning Monster Cards]
+Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Decision
+Decision: NO
+
+### Explanation
+Explanation: The effect of ""Future Visions"" banishes the monster when it is Normal Summoned. ""Book of Moon"" changes the position of the monster, it does not change the status of the monster. Since the monster is no longer on the field when it is changed to face-down Defense Position by ""Book of Moon"", the effect of ""Future Visions"" does not activate and the monster is not banished.","['8. Summoning Monster Cards', '14. Other Rules', '8. Summoning Monster Cards']"
+case_016,"['Spirit Reaper', 'Book of Moon']","Player A controls ""Spirit Reaper"". Player B activates ""Book of Moon"" targeting ""Spirit Reaper"".","Is ""Spirit Reaper"" destroyed?",NO,"""Spirit Reaper"" is face-down after the effect of ""Book of Moon"" finishes resolving, so ""Spirit Reaper"" is not destroyed.",NO,"""Spirit Reaper"" is not destroyed. The effect of ""Book of Moon"" changes the face-up status of ""Spirit Reaper"" to face-down Defense Position. The card itself is still on the field and is not considered destroyed.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Spirit Reaper"". Player B activates ""Book of Moon"" targeting ""Spirit Reaper"".
+
+### Query
+Is ""Spirit Reaper"" destroyed?
+
+### Card Text
+Spirit Reaper:
+  Card Type: Effect Monster
+  Sub-Type: Zombie
+  Text: Cannot be destroyed by battle. After resolving a card effect that targets this face-up card, destroy this card. When this card inflicts battle damage to your opponent by a direct attack: Discard 1 random card from their hand.
+
+Book of Moon:
+  Card Type: Spell Card
+  Sub-Type: Quick-Play
+  Text: Target 1 face-up monster on the field; change that target to face-down Defense Position.
+
+### Rulebook Context
+[Section: 15. Glossary]
+NOT considered “destroyed.” • Discard Discard means to send a card from your hand to the Graveyard. This can happen because of a card effect or by adjusting the number of cards in your hand during the End Phase. • Effects of Cards The effect of a card is the special ability written on it, like the effect of a Spell, Trap, or Effect Monster. Costs that are needed to activate an ability are not part of the effect. The conditions that describe how to play a “Special Summon Monster” are also not an effect. • Equip Cards In addition to Equip Spell Cards, sometimes Trap Cards or Monster Cards can become equipped to a monster. Equipped Traps remain Trap Cards, but equipped monsters are considered to be Equip Spells. The term “Equip Card” includes all 3 kinds (standard Equip Spells, equipped Traps, and monsters equipped to other monsters). If a Monster Card is equipped to another monster, it remains equipped to that monster and cannot be moved to a different target, even by card effects that would normally be able to do so. EXCEPTION: Union monsters equipped by their own effects can be moved by appropriate card effects. • Equipped Monster A monster that is equipped with an Equip Card is an “equipped monster.” When this monster is destroyed or ﬂipped face-down, the equipped card loses its target, and is destroyed and sent to the Graveyard. • Excavate When a card says to “excavate” cards from your Deck, you reveal those cards to both players. Then, before you do anything else, apply the instructions from the card effect that excavated them. Cards that are being excavated are still treated as being in the Deck until sent elsewhere by the card instructions. • Original ATK (or DEF) The Original ATK
+
+---
+
+[Section: 15. Glossary]
+the cards on the Game Mat other than the Graveyard, Deck, and Extra Deck. • Colon (:) and Semi-colon (;) Card effects are sometimes separated with a colon (:) and/or semi-colon (;). Text before the colon gives information on conditions to activate the effect, and timing on when it happens. Text before a semi-colon is what you do when the effect is activated. Text at the end of a sentence, after all colons and semi-colons, is what you do at resolution of the effect. • Control / Possess Cards you “control” are the cards in your Monster Zone, Spell & Trap Zone, Field Zone, and Pendulum Zone. Cards in your “possession” include all cards you control, plus the cards in your hand, Deck, Extra Deck, Graveyard, your banished cards, cards in the middle of being Summoned to your side of the ﬁeld, and Xyz Materials attached to monsters you control. If a player takes control of a card from their opponent, move it to the new controller’s side of the ﬁeld. If sent to the Graveyard, or returned to the hand or Deck, it is always returned to the Graveyard / hand / Deck of the original owner. • Destroy A card is destroyed when it is sent to the Graveyard due to battle between monsters or by an effect that destroys a card. A card that is returned from the ﬁeld to the hand or Deck, or, that is sent to the Graveyard as a cost or Tribute, is NOT considered “destroyed.” • Discard Discard means to send a card from your hand to the Graveyard. This can happen because of a card effect or by adjusting the number of cards in your hand during the End Phase. • Effects of Cards The effect of a card is the
+
+---
+
+[Section: 9. Spell Cards]
+behind the equipped monster to help you remember. If the equipped monster is destroyed, ﬂipped face-down, or removed from the ﬁeld, its Equip Cards are destroyed. Field Spell Cards: These cards go in your Field Zone and stay there. Each player can have 1 Field Spell Card on their own side of the ﬁeld. To use another Field Spell, send your previous one to the Graveyard. Many Field Spell effects apply to BOTH players. These cards may be placed face-down in the Field Zone, but are not active until ﬂipped face-up. Quick-Play Spell Cards: These are special Spell Cards that can be activated during any Phase of your turn, not just your Main Phase. You can also activate them during your opponent’s turn if you Set the card face-down ﬁrst, but then you cannot activate the card in the same turn you Set it.
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: NO
+Explanation: ""Spirit Reaper"" is not destroyed. The effect of ""Book of Moon"" changes the face-up status of ""Spirit Reaper"" to face-down Defense Position. The card itself is still on the field and is not considered destroyed.","['15. Glossary', '15. Glossary', '9. Spell Cards']"
+case_017,['Karakuri Anatomy'],"Player A Flip Summons a ""Karakuri"" monster, while controlling a face-up ""Karakuri Anatomy"".","Will a Karakuri Counter be placed on ""Karakuri Anatomy""?",YES,Flip Summmoning a monster counts as changing its battle position.,YES,"The text of ""Karakuri Anatomy"" states that each time a ""Karakuri"" monster's battle position is changed, a Karakuri Counter is placed on this card. Since Player A Flip Summoned a ""Karakuri"" monster, the battle position of the monster was changed, triggering the effect of ""Karakuri Anatomy"" to place a Karakuri Counter on it.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A Flip Summons a ""Karakuri"" monster, while controlling a face-up ""Karakuri Anatomy"".
+
+### Query
+Will a Karakuri Counter be placed on ""Karakuri Anatomy""?
+
+### Card Text
+Karakuri Anatomy:
+  Card Type: Spell Card
+  Sub-Type: Continuous
+  Text: Each time a ""Karakuri"" monster's battle position is changed, place 1 Karakuri Counter on this card (max. 2). You can send this card from the field to the Graveyard to draw 1 card for each Karakuri Counter on this card.
+
+### Rulebook Context
+[Section: 8. Summoning Monster Cards]
+face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of these during a turn as you want: • Flip Summon You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. This is called a Flip Summon. When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. You cannot use most monsters’ effects until they are face-up. • Special Summon Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. This is called a Special Summon. Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position. • Special Summon with a Card’s Effect Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. This is different from “Special Summon Monsters.” You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst,
+
+---
+
+[Section: 3. PENDULUM MONSTER CARDS]
+is a monster or not) would be sent to the Graveyard, place it face-up on your Extra Deck instead. You can Pendulum Summon it back to the ﬁeld later! Monsters Pendulum Summoned from the Extra Deck must be Summoned to the Extra Monster Zone or your Main Monster Zone pointed to by a Link Monster.
+
+---
+
+[Section: 14. Other Rules]
+ATK cannot destroy anything by battle. If two Attack Position monsters with 0 ATK battle each other, neither monster is destroyed. • Rules vs. Card Effects If there is a discrepancy between the basic rules and a card’s effect, the card effect takes precedence. For example, a monster can only attack once per turn, but with a card effect, it is possible to attack twice. • Counters You may need to place these on cards for some card effects. You cannot place counters unless a card effect allows it. Cards may have effects that change with the number of counters on them, or require you to remove counters as a cost. Some counters have speciﬁc names, such as “Spell Counter” or “Clock Counter.” Other than their names, each individual counter itself does not have any effects. • Actions which cannot be Chained to You can only create a Chain by responding to the activation of a card or effect. Summoning a monster, Tributing, changing a monster’s battle position and paying costs are not effect activations and therefore you cannot respond to those actions using a Chain. • Xyz Materials Monsters that are used to Xyz Summon are called “Xyz Materials”, and are placed underneath the Xyz Monster, to show that they are attached to it. Monsters that have become Xyz Materials are not treated as cards on the ﬁeld. When an Xyz Monster leaves the ﬁeld, all of the Xyz Materials attached to it are sent to the Graveyard. If an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: YES
+Explanation: The text of ""Karakuri Anatomy"" states that each time a ""Karakuri"" monster's battle position is changed, a Karakuri Counter is placed on this card. Since Player A Flip Summoned a ""Karakuri"" monster, the battle position of the monster was changed, triggering the effect of ""Karakuri Anatomy"" to place a Karakuri Counter on it.","['8. Summoning Monster Cards', '3. PENDULUM MONSTER CARDS', '14. Other Rules']"
+case_018,"['Torrential Tribute', 'Battle Fader']","Player A controls a set ""Torrential Tribute"" and declares a direct attack on Player B. Player B Special Summons ""Battle Fader""","Can Player A activate ""Torrential Tribute""?",NO,"When Player B resolve the effect of ""Battle Fader"" they Special Summon ""Battle Fader"" and then end the Battle Phase. ""Torrential Tribute"" cannot be activated because ending the Battle Phase is the last thing to happen.",NO,"The player cannot activate ""Torrential Tribute"" because the Battle Phase has ended. ""Battle Fader"" was Special Summoned in response to the attack declaration, so the attack is now resolved and the Battle Phase has ended. ""Torrential Tribute"" can only be activated during the opponent's turn when a monster(s) is Summoned, and since ""Battle Fader"" was Special Summoned in response to an attack, it is not considered a Summon for the purpose of activating ""Torrential Tribute"".","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a set ""Torrential Tribute"" and declares a direct attack on Player B. Player B Special Summons ""Battle Fader""
+
+### Query
+Can Player A activate ""Torrential Tribute""?
+
+### Card Text
+Torrential Tribute:
+  Card Type: Trap Card
+  Sub-Type: Normal
+  Text: When a monster(s) is Summoned: Destroy all monsters on the field.
+
+Battle Fader:
+  Card Type: Effect Monster
+  Sub-Type: Fiend
+  Text: When an opponent's monster declares a direct attack: You can Special Summon this card from your hand, then end the Battle Phase. If Summoned this way, banish it when it leaves the field.
+
+### Rulebook Context
+[Section: 11. Turn Structure]
+A Duel progresses in a series of turns which are divided into phases. Draw Phase: This is the ﬁrst phase. The player whose turn it is (the “turn player”) draws 1 card from the top of their Deck. A player with no cards left in their Deck and unable to draw loses the Duel. After you draw, Trap Cards or Quick-Play Spell Cards can be activated before proceeding to the Standby Phase. IMPORTANT: The player who goes ﬁrst cannot draw during the Draw Phase of their ﬁrst turn. Standby Phase: Some cards have effects that activate, or costs you must pay, in the Standby Phase. If you do not have any of these cards on the ﬁeld, you can still activate Trap Cards or Quick-Play Spell Cards before moving on to your Main Phase 1. Main Phase 1: This is when you play most of your cards: you can Normal Summon, Set, or change the battle position of a monster, activate a card’s effect, and Set Spell and Trap Cards. These actions can be done in any order you want, but some actions have restrictions. Possible Actions in this Phase. • Summon or Set a Monster There is no limit to the number of times you can Flip Summon or Special Summon during a turn, but you can only Normal Summon or Set a monster (including a Tribute Summon) once per turn. • Change Your Monsters’ Battle Positions. This includes Flip Summoning a monster, or changing the position of a face-up monster to face-up Attack or Defense Position. You can change the position of each monster you control, except in three cases. 1. You cannot change the battle position of a monster that was played onto the ﬁeld this turn. 2. You cannot change it in Main Phase 2 if
+
+---
+
+[Section: 8. Summoning Monster Cards]
+face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of these during a turn as you want: • Flip Summon You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. This is called a Flip Summon. When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. You cannot use most monsters’ effects until they are face-up. • Special Summon Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. This is called a Special Summon. Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position. • Special Summon with a Card’s Effect Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. This is different from “Special Summon Monsters.” You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst,
+
+---
+
+[Section: 8. Summoning Monster Cards]
+There are several ways to play monsters onto the ﬁeld. These ways can be categorized into 2 groups: actions that can be done only once per turn, and actions that can be done multiple times per turn. You can do one of these once per turn: • Normal Summon This is the most common way to Summon a monster. Simply play a Monster Card from your hand onto the ﬁeld in face-up Attack Position. All Normal Monsters, and most Effect Monsters (unless they have a speciﬁc restriction), can be Summoned in this way. • Normal Set To play a Monster Card from your hand in face-down Defense Position is called a Normal Set. A monster Normal Set on the ﬁeld is NOT considered Summoned. It has been Normal Set, and can be Summoned with a Flip Summon or ﬂipped face-up by an attack or card effect. Remember, you can only Normal Summon OR Normal Set (Normal Summon/Set, in short), once per turn, so if you Normal Set a monster you cannot also Normal Summon a monster that turn. Note: You cannot play a monster from your hand onto the ﬁeld in face-up Defense Position. • Tribute Summon For monsters that are Level 5 or higher, you must Tribute at least 1 monster you control before the Normal Summon/Set. This is called a Tribute Summon. Monsters that are Level 5 or 6 require 1 Tribute and Monsters that are Level 7 or higher require 2 Tributes. If you Tribute Summon in face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Decision
+Decision: NO
+
+### Explanation
+Explanation: The player cannot activate ""Torrential Tribute"" because the Battle Phase has ended. ""Battle Fader"" was Special Summoned in response to the attack declaration, so the attack is now resolved and the Battle Phase has ended. ""Torrential Tribute"" can only be activated during the opponent's turn when a monster(s) is Summoned, and since ""Battle Fader"" was Special Summoned in response to an attack, it is not considered a Summon for the purpose of activating ""Torrential Tribute"".","['11. Turn Structure', '8. Summoning Monster Cards', '8. Summoning Monster Cards']"
+case_019,"['Archlord Kristya', 'Relinquished']","Player A controls ""Relinquished"" equiped with Player B's ""Archlord Kristya"". Player B attacks ""Relinquished"" with a monster that would destroy ""Relinquished"" by battle, which destroys the equiped ""Archlord Kristya"".","Does ""Archlord Kristya"" return to the top of the Deck?",YES,"""Archlord Kristya"" will return to the top of the Deck, since it is still considered face-up on the field while being equiped to ""Relinquished"".",NO,"The text of ""Archlord Kristya"" states that if it is sent from the field to the Graveyard, it should be placed on top of the Deck instead. The monster ""Relinquished"" was destroyed by battle, and the equipped ""Archlord Kristya"" was destroyed along with it. Since ""Archlord Kristya"" was not sent to the Graveyard by a card effect, it does not return to the top of the Deck.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Relinquished"" equiped with Player B's ""Archlord Kristya"". Player B attacks ""Relinquished"" with a monster that would destroy ""Relinquished"" by battle, which destroys the equiped ""Archlord Kristya"".
+
+### Query
+Does ""Archlord Kristya"" return to the top of the Deck?
+
+### Card Text
+Archlord Kristya:
+  Card Type: Effect Monster
+  Sub-Type: Fairy
+  Text: If you have exactly 4 Fairy monsters in your GY, you can Special Summon this card (from your hand). If Summoned this way: Target 1 Fairy monster in your GY; add that target to your hand. Neither player can Special Summon monsters. If this face-up card would be sent from the field to the GY, place it on top of the Deck, instead.
+
+Relinquished:
+  Card Type: Ritual Effect Monster
+  Sub-Type: Spellcaster
+  Text: You can Ritual Summon this card with ""Black Illusion Ritual"". Once per turn: You can target 1 monster your opponent controls; equip that target to this card (max. 1). This card's ATK/DEF become equal to that equipped monster's. If this card would be destroyed by battle, destroy that equipped monster instead. While equipped with that monster, any battle damage you take from battles involving this card inflicts equal effect damage to your opponent.
+
+### Rulebook Context
+[Section: 15. Glossary]
+NOT considered “destroyed.” • Discard Discard means to send a card from your hand to the Graveyard. This can happen because of a card effect or by adjusting the number of cards in your hand during the End Phase. • Effects of Cards The effect of a card is the special ability written on it, like the effect of a Spell, Trap, or Effect Monster. Costs that are needed to activate an ability are not part of the effect. The conditions that describe how to play a “Special Summon Monster” are also not an effect. • Equip Cards In addition to Equip Spell Cards, sometimes Trap Cards or Monster Cards can become equipped to a monster. Equipped Traps remain Trap Cards, but equipped monsters are considered to be Equip Spells. The term “Equip Card” includes all 3 kinds (standard Equip Spells, equipped Traps, and monsters equipped to other monsters). If a Monster Card is equipped to another monster, it remains equipped to that monster and cannot be moved to a different target, even by card effects that would normally be able to do so. EXCEPTION: Union monsters equipped by their own effects can be moved by appropriate card effects. • Equipped Monster A monster that is equipped with an Equip Card is an “equipped monster.” When this monster is destroyed or ﬂipped face-down, the equipped card loses its target, and is destroyed and sent to the Graveyard. • Excavate When a card says to “excavate” cards from your Deck, you reveal those cards to both players. Then, before you do anything else, apply the instructions from the card effect that excavated them. Cards that are being excavated are still treated as being in the Deck until sent elsewhere by the card instructions. • Original ATK (or DEF) The Original ATK
+
+---
+
+[Section: 14. Other Rules]
+ATK cannot destroy anything by battle. If two Attack Position monsters with 0 ATK battle each other, neither monster is destroyed. • Rules vs. Card Effects If there is a discrepancy between the basic rules and a card’s effect, the card effect takes precedence. For example, a monster can only attack once per turn, but with a card effect, it is possible to attack twice. • Counters You may need to place these on cards for some card effects. You cannot place counters unless a card effect allows it. Cards may have effects that change with the number of counters on them, or require you to remove counters as a cost. Some counters have speciﬁc names, such as “Spell Counter” or “Clock Counter.” Other than their names, each individual counter itself does not have any effects. • Actions which cannot be Chained to You can only create a Chain by responding to the activation of a card or effect. Summoning a monster, Tributing, changing a monster’s battle position and paying costs are not effect activations and therefore you cannot respond to those actions using a Chain. • Xyz Materials Monsters that are used to Xyz Summon are called “Xyz Materials”, and are placed underneath the Xyz Monster, to show that they are attached to it. Monsters that have become Xyz Materials are not treated as cards on the ﬁeld. When an Xyz Monster leaves the ﬁeld, all of the Xyz Materials attached to it are sent to the Graveyard. If an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. They remain attached to the Xyz Monster. • Leaves the Field Some monsters have effects that activate when they “leave the ﬁeld”. For example, these effects activate when the
+
+---
+
+[Section: 15. Glossary]
+the cards on the Game Mat other than the Graveyard, Deck, and Extra Deck. • Colon (:) and Semi-colon (;) Card effects are sometimes separated with a colon (:) and/or semi-colon (;). Text before the colon gives information on conditions to activate the effect, and timing on when it happens. Text before a semi-colon is what you do when the effect is activated. Text at the end of a sentence, after all colons and semi-colons, is what you do at resolution of the effect. • Control / Possess Cards you “control” are the cards in your Monster Zone, Spell & Trap Zone, Field Zone, and Pendulum Zone. Cards in your “possession” include all cards you control, plus the cards in your hand, Deck, Extra Deck, Graveyard, your banished cards, cards in the middle of being Summoned to your side of the ﬁeld, and Xyz Materials attached to monsters you control. If a player takes control of a card from their opponent, move it to the new controller’s side of the ﬁeld. If sent to the Graveyard, or returned to the hand or Deck, it is always returned to the Graveyard / hand / Deck of the original owner. • Destroy A card is destroyed when it is sent to the Graveyard due to battle between monsters or by an effect that destroys a card. A card that is returned from the ﬁeld to the hand or Deck, or, that is sent to the Graveyard as a cost or Tribute, is NOT considered “destroyed.” • Discard Discard means to send a card from your hand to the Graveyard. This can happen because of a card effect or by adjusting the number of cards in your hand during the End Phase. • Effects of Cards The effect of a card is the
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+---
+
+Decision: NO
+Explanation: The text of ""Archlord Kristya"" states that if it is sent from the field to the Graveyard, it should be placed on top of the Deck instead. The monster ""Relinquished"" was destroyed by battle, and the equipped ""Archlord Kristya"" was destroyed along with it. Since ""Archlord Kristya"" was not sent to the Graveyard by a card effect, it does not return to the top of the Deck.","['15. Glossary', '14. Other Rules', '15. Glossary']"
+case_020,"['Gale Dogra', 'Monster Reborn']","Player A sends a Synchro monster to the Graveyard by the effect of ""Gale Dogra""","Can Player A use the effect of ""Monster Reborn"" to Special Summon this Synchro monster?",NO,"Player A cannot use the effect of ""Monster Reborn"" to Special Summon the Synchro monster from the Graveyard, because the Synchro monster has to be properly Special Summoned first, before it can be Special Summoned by another card's effect.",NO,"Since Player A sent the Synchro monster to the Graveyard by the effect of ""Gale Dogra"" without properly Synchro Summoning it first, Player A cannot use the effect of ""Monster Reborn"" to Special Summon this Synchro monster.","You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state, card text, context and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A sends a Synchro monster to the Graveyard by the effect of ""Gale Dogra""
+
+### Query
+Can Player A use the effect of ""Monster Reborn"" to Special Summon this Synchro monster?
+
+### Card Text
+Gale Dogra:
+  Card Type: Effect Monster
+  Sub-Type: Insect
+  Text: You can pay 3000 Life Points to send 1 monster from your Extra Deck to the Graveyard.
+
+Monster Reborn:
+  Card Type: Spell Card
+  Sub-Type: Normal
+  Text: Target 1 monster in either GY; Special Summon it.
+
+### Rulebook Context
+[Section: 5. SYNCHRO MONSTERS]
+Synchro Monsters are placed in the Extra Deck, separate from the Main Deck. You can Special Summon a powerful Synchro Monster to the ﬁeld in an instant just by using the Levels of your monsters. They can be Synchro Summoned from the Extra Deck by sending 1 face-up “Tuner” monster and any number of face-up non-Tuner monsters from your ﬁeld to the Graveyard, when the sum of all their Levels is exactly equal to the Level of the Synchro Monster. TUNER MONSTERS FOR SYNCHRO SUMMON: In order to Synchro Summon a Synchro Monster, you need 1 Tuner (look for “Tuner” next to its Type). The Tuner monster and other face-up monsters you use for the Synchro Summon are called Synchro Materials. The sum of their Levels is the Level of Synchro Monster you can Summon. HOW TO SYNCHRO SUMMON: During your Main Phase, you can declare a Synchro Summon when the combined total Levels of 1 face-up Tuner monster and any number of other face-up monsters you control are equal to the Level of the Synchro Monster you want to Synchro Summon. After double-checking the Level of the Synchro Monster you want, send the face-up Synchro Materials from your ﬁeld to the Graveyard. After sending the Synchro Materials from the ﬁeld to the Graveyard, take the Synchro Monster from your Extra Deck and play it in the Extra Monster Zone or in the Main Monster Zone in face-up Attack or Defense Position.
+
+---
+
+[Section: 8. Summoning Monster Cards]
+Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+---
+
+[Section: 8. Summoning Monster Cards]
+face-down Defense Position, it is called a Tribute Set. A monster Tribute Set on the ﬁeld is NOT considered Summoned. Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method. You can do as many of these during a turn as you want: • Flip Summon You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. This is called a Flip Summon. When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. You cannot use most monsters’ effects until they are face-up. • Special Summon Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. This is called a Special Summon. Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position. • Special Summon with a Card’s Effect Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. This is different from “Special Summon Monsters.” You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst,
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Decision
+Decision: NO
+
+### Explanation
+Explanation: Since Player A sent the Synchro monster to the Graveyard by the effect of ""Gale Dogra"" without properly Synchro Summoning it first, Player A cannot use the effect of ""Monster Reborn"" to Special Summon this Synchro monster.","['5. SYNCHRO MONSTERS', '8. Summoning Monster Cards', '8. Summoning Monster Cards']"

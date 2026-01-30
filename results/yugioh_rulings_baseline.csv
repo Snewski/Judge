@@ -1,0 +1,347 @@
+id,cards,game_state,query,expected_decision,expected_explanation,baseline_decision,baseline_explanation,baseline_raw
+case_001,"['Mystical Space Typhoon', 'Royal Decree']","Player B activates ""Royal Decree"". Player A controls ""Mystical Space Typhoon"".","Can Player A chain ""Mystical Space Typhoon"" to the activation of ""Royal Decree""?",YES,A Quick-Play Spell can be chained to a Trap activation.,NO,"""Mystical Space Typhoon"" cannot be chained to the activation of ""Royal Decree"" because ""Royal Decree"" is a Quick-Play Spell Card that negates the activation of other cards. Once ""Royal Decree"" resolves, it negates the activation of ""Mystical Space Typhoon"" and no chain link is established for ""Mystical Space Typhoon"" to resolve.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player B activates ""Royal Decree"". Player A controls ""Mystical Space Typhoon"".
+
+### Query
+Can Player A chain ""Mystical Space Typhoon"" to the activation of ""Royal Decree""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: ""Mystical Space Typhoon"" cannot be chained to the activation of ""Royal Decree"" because ""Royal Decree"" is a Quick-Play Spell Card that negates the activation of other cards. Once ""Royal Decree"" resolves, it negates the activation of ""Mystical Space Typhoon"" and no chain link is established for ""Mystical Space Typhoon"" to resolve."
+case_002,"['Skill Drain', 'Jinzo']","Player A controls a face-up ""Skill Drain"". Player B summons ""Jinzo"".","Does ""Jinzo"" negate ""Skill Drain""?",NO,"""Skill Drain"" is already active and negates Jinzo's effect on summon.",NO,"""Jinzo"" is a monster card, and it does not have the ability to negate ""Skill Drain"". ""Skill Drain"" is a continuous spell card, and it negates the effects of all face-up monsters on the field.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a face-up ""Skill Drain"". Player B summons ""Jinzo"".
+
+### Query
+Does ""Jinzo"" negate ""Skill Drain""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: ""Jinzo"" is a monster card, and it does not have the ability to negate ""Skill Drain"". ""Skill Drain"" is a continuous spell card, and it negates the effects of all face-up monsters on the field."
+case_003,"['Geomathmech Final Sigma', 'Gameciel, the Sea Turtle Kaiju']","Player A controls ""Geomathmech Final Sigma"" in the Extra Monster Zone. Player B have ""Gameciel, the Sea Turtle Kaiju"" in their hand.","Can ""Geomathmech Final Sigma"" be Tributed for the special summon of ""Gameciel, the Sea Turtle Kaiju""?",YES,"""Geomathmech Final Sigma"" can be tributed as cost to activate an effect, like the special summon of ""Gameciel, the Sea Turtle Kaiju""",NO,"""Geomathmech Final Sigma"" is a Fusion Monster and cannot be Tributed for the Special Summon of another monster. ""Gameciel, the Sea Turtle Kaiju"" is a Kaiju-Type monster and can be Special Summoned by Tributing a monster, but not ""Geomathmech Final Sigma"".","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Geomathmech Final Sigma"" in the Extra Monster Zone. Player B have ""Gameciel, the Sea Turtle Kaiju"" in their hand.
+
+### Query
+Can ""Geomathmech Final Sigma"" be Tributed for the special summon of ""Gameciel, the Sea Turtle Kaiju""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: ""Geomathmech Final Sigma"" is a Fusion Monster and cannot be Tributed for the Special Summon of another monster. ""Gameciel, the Sea Turtle Kaiju"" is a Kaiju-Type monster and can be Special Summoned by Tributing a monster, but not ""Geomathmech Final Sigma""."
+case_004,"['Geomathmech Final Sigma', 'The Monarchs Stormforth']","Player A controls ""Geomathmech Final Sigma"" in the Extra Monster Zone. Player B activates ""The Monarchs Stormforth"".","Can ""Geomathmech Final Sigma"" be Tributed by the effect of ""The Monarchs Stormforth""?",NO,"""Geomathmech Final Sigma"" can not be tributed by the effect of cards, except ""Mathmech"" cards, while in the Extra Monster Zone.",NO,"""The Monarchs Stormforth"" is a Spell Card that allows the player to Tribute one monster to Special Summon a Monarch monster from their Deck. It does not target ""Geomathmech Final Sigma"" or specify it in any way, so it cannot be used to Tribute that monster. Additionally, ""Geomathmech Final Sigma"" is in the Extra Monster Zone, which is not a Zone where monsters can be Tributed from.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Geomathmech Final Sigma"" in the Extra Monster Zone. Player B activates ""The Monarchs Stormforth"".
+
+### Query
+Can ""Geomathmech Final Sigma"" be Tributed by the effect of ""The Monarchs Stormforth""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: ""The Monarchs Stormforth"" is a Spell Card that allows the player to Tribute one monster to Special Summon a Monarch monster from their Deck. It does not target ""Geomathmech Final Sigma"" or specify it in any way, so it cannot be used to Tribute that monster. Additionally, ""Geomathmech Final Sigma"" is in the Extra Monster Zone, which is not a Zone where monsters can be Tributed from."
+case_005,['Mathmech Sigma'],"Player A special summons ""Mathmech Sigma"" by its own effect and it is then used to summon an Xyz monster.","Is ""Mathmech Sigma"" still banished when it is detached as Xyz material?",NO,"Since ""Mathmech Sigma"" was used as material for an Xyz summon it is no longer treated as a card on the field, and is sent to the Graveyard.",NO,"When ""Mathmech Sigma"" is used as an Xyz Material Monster, it is not sent to the Graveyard, but instead remains face-up on the field as an Xyz Material. Once the Xyz Monster is destroyed or leaves the field, the Xyz Materials are no longer needed and are sent to the Graveyard. However, ""Mathmech Sigma"" was not sent to the Graveyard when it was detached, so it is still on the field.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A special summons ""Mathmech Sigma"" by its own effect and it is then used to summon an Xyz monster.
+
+### Query
+Is ""Mathmech Sigma"" still banished when it is detached as Xyz material?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: When ""Mathmech Sigma"" is used as an Xyz Material Monster, it is not sent to the Graveyard, but instead remains face-up on the field as an Xyz Material. Once the Xyz Monster is destroyed or leaves the field, the Xyz Materials are no longer needed and are sent to the Graveyard. However, ""Mathmech Sigma"" was not sent to the Graveyard when it was detached, so it is still on the field."
+case_006,['Primathmech Laplacian'],"Player A Xyz summons ""Primathmech Laplacian"" and uses its trigger effect, detaching 3 materials.",Does the trigger effect of Primathmech Laplacian target?,NO,"No, it does not. Cards to be sent to the Graveyard are chosen at resolution.",NO,The trigger effect of Primathmech Laplacian does not target. It simply requires the detachment of three materials from the Xyz Monster to activate.,"
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A Xyz summons ""Primathmech Laplacian"" and uses its trigger effect, detaching 3 materials.
+
+### Query
+Does the trigger effect of Primathmech Laplacian target?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: The trigger effect of Primathmech Laplacian does not target. It simply requires the detachment of three materials from the Xyz Monster to activate."
+case_007,"['Geomathmech Magma', 'Solemn Judgment']","Player A Synchro summons ""Geomathmech Magma"". Player B activates ""Solemn Judgment"" to negate the summon and destroys ""Geomathmech Magma"".","Can the search effect of ""Geomathmech Magma"" be activated?",YES,"""Geomathmech Magma"" says ""this card in its owner possession..."" so the search effect can be activated whenever ""Geomathmech Magma"" is destroyed, even if it was not properly summoned first.",NO,"The effect of ""Geomathmech Magma"" that searches for a ""Geomathmech"" card when it is Synchro Summoned can only be activated when the Synchro Summon is successful. Since Player B was able to negate the Synchro Summon with ""Solemn Judgment"", the effect was not activated and cannot be used.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A Synchro summons ""Geomathmech Magma"". Player B activates ""Solemn Judgment"" to negate the summon and destroys ""Geomathmech Magma"".
+
+### Query
+Can the search effect of ""Geomathmech Magma"" be activated?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: NO
+Explanation: The effect of ""Geomathmech Magma"" that searches for a ""Geomathmech"" card when it is Synchro Summoned can only be activated when the Synchro Summon is successful. Since Player B was able to negate the Synchro Summon with ""Solemn Judgment"", the effect was not activated and cannot be used."
+case_008,['Mathmech Induction'],"Player A controls a set ""Mathmech Induction"" and has declared an attack.","Can ""Mathmech Induction"" be activated during the Damage Step?",YES,"""Mathmech Induction"" can be activated at the Start of the Damage Step before performing Damage calculation",NO,"""Mathmech Induction"" is a Quick Effect, meaning it can only be activated when it is chain link 1 or 2 in a chain, or when no chains exist yet. During the Damage Step, there is already a chain (the attack chain) that started with the declaration of an attack, so ""Mathmech Induction"" cannot be activated during this phase.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a set ""Mathmech Induction"" and has declared an attack.
+
+### Query
+Can ""Mathmech Induction"" be activated during the Damage Step?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: ""Mathmech Induction"" is a Quick Effect, meaning it can only be activated when it is chain link 1 or 2 in a chain, or when no chains exist yet. During the Damage Step, there is already a chain (the attack chain) that started with the declaration of an attack, so ""Mathmech Induction"" cannot be activated during this phase."
+case_009,"['Mathmech Superfactorial', 'D.D. Crow']","Player A activates the second effect of ""Mathmech Superfactorial"", targeting 3 ""Mathmech"" monsters in the Graveyard to perform an Xyz summon. Player B chains ""D.D. Crow"", banishing one of the targets.","Will the effect of ""Mathmech Superfactorial"" resolve?",YES,"If one of the targeted monsters no longer exists in the Graveyard when resolving a ""Mathmech Superfactorial"" that was activated targeting three monsters, the two remaining monsters are Special Summoned. Then, if there is an Xyz Monster in your Extra Deck that can be Xyz Summoned using those two Special Summoned monsters, immediately after ""Mathmech Superfactorial"" resolves, Xyz Summon such a monster.",NO,"The effect of ""Mathmech Superfactorial"" requires the targeted monsters to remain in the Graveyard until the end of the turn. Since one of the targets was banished by ""D.D. Crow"", the effect cannot be completed and thus cannot resolve.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A activates the second effect of ""Mathmech Superfactorial"", targeting 3 ""Mathmech"" monsters in the Graveyard to perform an Xyz summon. Player B chains ""D.D. Crow"", banishing one of the targets.
+
+### Query
+Will the effect of ""Mathmech Superfactorial"" resolve?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: NO
+Explanation: The effect of ""Mathmech Superfactorial"" requires the targeted monsters to remain in the Graveyard until the end of the turn. Since one of the targets was banished by ""D.D. Crow"", the effect cannot be completed and thus cannot resolve."
+case_010,['Mathmech Superfactorial'],"Player A activates ""Mathmech Superfactorial"".","Can Player A target a ""Mathmech"" Xyz monster in the Graveyard and special summon it?",NO,"You must be able to resolve ""Mathmech Superfactorial"" at activation: since a Xyz monster does not have a level it can not be used for a Synchro or Xyz summon and thus it is not a legal target.",YES,"""Mathmech Superfactorial"" allows you to special summon a ""Mathmech"" Xyz monster from your Graveyard by paying half of its original Xyz Materials. Since Player A activated this card, they can target a ""Mathmech"" Xyz monster in their Graveyard and special summon it by paying half of its original Xyz Materials.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A activates ""Mathmech Superfactorial"".
+
+### Query
+Can Player A target a ""Mathmech"" Xyz monster in the Graveyard and special summon it?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: YES
+Explanation: ""Mathmech Superfactorial"" allows you to special summon a ""Mathmech"" Xyz monster from your Graveyard by paying half of its original Xyz Materials. Since Player A activated this card, they can target a ""Mathmech"" Xyz monster in their Graveyard and special summon it by paying half of its original Xyz Materials."
+case_011,"['Macro Cosmos', 'Mathmech Circular']","Player A controls a face-up ""Macro Cosmos"".","Can Player B activate the first effect of ""Mathmech Circular"" while ""Macro Cosmos"" is face up on the field?",NO,"Since ""Macro Cosmos"" banishes all cards sent to the Graveyard, Player B are not able to pay the cost required by ""Mathmech Circular"" for summoning itself.",NO,"The effect of ""Macro Cosmos"" negates the activation of all card effects, except for Spell Speed 3 effects. Since ""Mathmech Circular"" is a Level 4 Effect Monster, its effect is of the Monster Type and is considered a Card Effect. Therefore, Player B cannot activate the first effect of ""Mathmech Circular"" while ""Macro Cosmos"" is face up on the field.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a face-up ""Macro Cosmos"".
+
+### Query
+Can Player B activate the first effect of ""Mathmech Circular"" while ""Macro Cosmos"" is face up on the field?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: NO
+Explanation: The effect of ""Macro Cosmos"" negates the activation of all card effects, except for Spell Speed 3 effects. Since ""Mathmech Circular"" is a Level 4 Effect Monster, its effect is of the Monster Type and is considered a Card Effect. Therefore, Player B cannot activate the first effect of ""Mathmech Circular"" while ""Macro Cosmos"" is face up on the field."
+case_012,"['Green Baboon, Defender of the Forest', 'Raigeki']","Player A controls a face-up Beast-Type monster. Player B activates ""Raigeki"" and destroys the Beast-Type monster.","Can Player A Special Summon multiple ""Green Baboon, Defender of the Forest""?",NO,"Even though the effect of ""Green Baboon, Defender of the Forest"" is not an Only once per chain effect, Player A cannot Special Summon multiple ""Green Baboon, Defender of the Forest"", even if Player A has multiple copies of ""Green Baboon, Defender of the Forest"" in their Hand/Graveyard.",NO,"""Green Baboon, Defender of the Forest"" is a monster that can only be Special Summoned from the hand when a Beast-Type monster is destroyed by a card effect. Since Player A's Beast-Type monster was destroyed, Player A can Special Summon one ""Green Baboon, Defender of the Forest"" if they have it in their hand. However, they cannot Special Summon multiple ""Green Baboons"" in the same turn due to the normal summoning and special summoning limitations.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a face-up Beast-Type monster. Player B activates ""Raigeki"" and destroys the Beast-Type monster.
+
+### Query
+Can Player A Special Summon multiple ""Green Baboon, Defender of the Forest""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: NO
+Explanation: ""Green Baboon, Defender of the Forest"" is a monster that can only be Special Summoned from the hand when a Beast-Type monster is destroyed by a card effect. Since Player A's Beast-Type monster was destroyed, Player A can Special Summon one ""Green Baboon, Defender of the Forest"" if they have it in their hand. However, they cannot Special Summon multiple ""Green Baboons"" in the same turn due to the normal summoning and special summoning limitations."
+case_013,"['Peten the Dark Clown', 'Soul Taker']","Player A's ""Peten the Dark Clown"" is destroyed by the effect of Player B's ""Soul Taker""","Can Player A activate the effect of ""Peten the Dark Clown""?",NO,"The effect of ""Peten the Dark Clown"" is a ""When...You can..."" effect, and misses timing due to the effect of ""Soul Taker"".",NO,"Once a card is destroyed, its effects cannot be activated.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A's ""Peten the Dark Clown"" is destroyed by the effect of Player B's ""Soul Taker""
+
+### Query
+Can Player A activate the effect of ""Peten the Dark Clown""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: Once a card is destroyed, its effects cannot be activated."
+case_014,"['Light and Darkness Dragon', 'Formula Synchron']","Player A controls ""Formula Synchron"". Player B. controls ""Light and Darkness Dragon"" with the following stats ATK/DEF 2800/2400, and tries to leave Main Phase 1 and enter the Battle Phase.","Can Player A activate the quick effect of ""Formula Synchron"" multiple times?",YES,"The quick effect of ""Formula Synchron"" can be activated multiple times, just not on the same chain, each activation is negated by the quick effect of ""Light and Darkness Dragon"" until it no longer can pay the cost to activate the quick effect",NO,"The quick effect of ""Formula Synchron"" can only be activated once per turn. Since Player A has already activated it during their turn, they cannot activate it again during the Battle Phase.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Formula Synchron"". Player B. controls ""Light and Darkness Dragon"" with the following stats ATK/DEF 2800/2400, and tries to leave Main Phase 1 and enter the Battle Phase.
+
+### Query
+Can Player A activate the quick effect of ""Formula Synchron"" multiple times?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+### Ruling
+Decision: NO
+Explanation: The quick effect of ""Formula Synchron"" can only be activated once per turn. Since Player A has already activated it during their turn, they cannot activate it again during the Battle Phase."
+case_015,"['Future Visions', 'Book of Moon']","Player A Normal Summons a monster, triggering the effect of Player B's ""Future Visions"". Player A chains ""Book of Moon"" targeting the Normal Summoned monster","Is the monster still banished by the effect of ""Future Vision""?",YES,"The monster still banished by the effect of ""Future Vision"" after being flipped face-down by ""Book of Moon"", since the target do not need to meet the target requirements at resolution, only when targeted.",NO,"The effect of ""Future Visions"" is a continuous effect that banishes a monster when a monster is Normal Summoned or Set. Once ""Book of Moon"" is activated, the effect of the Normal Summon is no longer being applied, and the monster is no longer considered to be Normal Summoned or Set. Therefore, the effect of ""Future Visions"" no longer applies and the monster is not banished.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A Normal Summons a monster, triggering the effect of Player B's ""Future Visions"". Player A chains ""Book of Moon"" targeting the Normal Summoned monster
+
+### Query
+Is the monster still banished by the effect of ""Future Vision""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: The effect of ""Future Visions"" is a continuous effect that banishes a monster when a monster is Normal Summoned or Set. Once ""Book of Moon"" is activated, the effect of the Normal Summon is no longer being applied, and the monster is no longer considered to be Normal Summoned or Set. Therefore, the effect of ""Future Visions"" no longer applies and the monster is not banished."
+case_016,"['Spirit Reaper', 'Book of Moon']","Player A controls ""Spirit Reaper"". Player B activates ""Book of Moon"" targeting ""Spirit Reaper"".","Is ""Spirit Reaper"" destroyed?",NO,"""Spirit Reaper"" is face-down after the effect of ""Book of Moon"" finishes resolving, so ""Spirit Reaper"" is not destroyed.",NO,"""Book of Moon"" only turns a monster face-down, it does not destroy it.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Spirit Reaper"". Player B activates ""Book of Moon"" targeting ""Spirit Reaper"".
+
+### Query
+Is ""Spirit Reaper"" destroyed?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: ""Book of Moon"" only turns a monster face-down, it does not destroy it."
+case_017,['Karakuri Anatomy'],"Player A Flip Summons a ""Karakuri"" monster, while controlling a face-up ""Karakuri Anatomy"".","Will a Karakuri Counter be placed on ""Karakuri Anatomy""?",YES,Flip Summmoning a monster counts as changing its battle position.,YES,"When a ""Karakuri"" monster is Flip Summoned, if the controller of ""Karakuri Anatomy"" in their Graveyard is sent there by the effect of that monster, a Karakuri Counter is placed on ""Karakuri Anatomy"". In this case, Player A Flip Summoned a ""Karakuri"" monster, and ""Karakuri Anatomy"" was sent to the Graveyard by that monster's effect. Therefore, a Karakuri Counter is placed on ""Karakuri Anatomy"".","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A Flip Summons a ""Karakuri"" monster, while controlling a face-up ""Karakuri Anatomy"".
+
+### Query
+Will a Karakuri Counter be placed on ""Karakuri Anatomy""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: YES
+Explanation: When a ""Karakuri"" monster is Flip Summoned, if the controller of ""Karakuri Anatomy"" in their Graveyard is sent there by the effect of that monster, a Karakuri Counter is placed on ""Karakuri Anatomy"". In this case, Player A Flip Summoned a ""Karakuri"" monster, and ""Karakuri Anatomy"" was sent to the Graveyard by that monster's effect. Therefore, a Karakuri Counter is placed on ""Karakuri Anatomy""."
+case_018,"['Torrential Tribute', 'Battle Fader']","Player A controls a set ""Torrential Tribute"" and declares a direct attack on Player B. Player B Special Summons ""Battle Fader""","Can Player A activate ""Torrential Tribute""?",NO,"When Player B resolve the effect of ""Battle Fader"" they Special Summon ""Battle Fader"" and then end the Battle Phase. ""Torrential Tribute"" cannot be activated because ending the Battle Phase is the last thing to happen.",NO,"Torrential Tribute can only be activated when a player declares an attack, but the attack has not yet resolved. Since Player B has already Special Summoned Battle Fader in response to the attack declaration, the attack has already resolved and Torrential Tribute cannot be activated.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls a set ""Torrential Tribute"" and declares a direct attack on Player B. Player B Special Summons ""Battle Fader""
+
+### Query
+Can Player A activate ""Torrential Tribute""?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: Torrential Tribute can only be activated when a player declares an attack, but the attack has not yet resolved. Since Player B has already Special Summoned Battle Fader in response to the attack declaration, the attack has already resolved and Torrential Tribute cannot be activated."
+case_019,"['Archlord Kristya', 'Relinquished']","Player A controls ""Relinquished"" equiped with Player B's ""Archlord Kristya"". Player B attacks ""Relinquished"" with a monster that would destroy ""Relinquished"" by battle, which destroys the equiped ""Archlord Kristya"".","Does ""Archlord Kristya"" return to the top of the Deck?",YES,"""Archlord Kristya"" will return to the top of the Deck, since it is still considered face-up on the field while being equiped to ""Relinquished"".",NO,"When ""Archlord Kristya"" is destroyed by battle while equipped to ""Relinquished"", it is sent to the Graveyard, not the top of the Deck.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A controls ""Relinquished"" equiped with Player B's ""Archlord Kristya"". Player B attacks ""Relinquished"" with a monster that would destroy ""Relinquished"" by battle, which destroys the equiped ""Archlord Kristya"".
+
+### Query
+Does ""Archlord Kristya"" return to the top of the Deck?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: When ""Archlord Kristya"" is destroyed by battle while equipped to ""Relinquished"", it is sent to the Graveyard, not the top of the Deck."
+case_020,"['Gale Dogra', 'Monster Reborn']","Player A sends a Synchro monster to the Graveyard by the effect of ""Gale Dogra""","Can Player A use the effect of ""Monster Reborn"" to Special Summon this Synchro monster?",NO,"Player A cannot use the effect of ""Monster Reborn"" to Special Summon the Synchro monster from the Graveyard, because the Synchro monster has to be properly Special Summoned first, before it can be Special Summoned by another card's effect.",NO,"The effect of ""Monster Reborn"" can only Special Summon a monster from the Graveyard that was previously face-up on the field. Since Player A's Synchro monster was sent to the Graveyard by the effect of ""Gale Dogra,"" it was not face-up on the field when it was sent there, so ""Monster Reborn"" cannot be used to Special Summon it.","
+You are acting as a Yu-Gi-Oh! Judge.
+Answer the ruling question based only on the game state and your internal knowledge.
+Give a YES or NO answer and a short explanation.
+
+### Game State
+Player A sends a Synchro monster to the Graveyard by the effect of ""Gale Dogra""
+
+### Query
+Can Player A use the effect of ""Monster Reborn"" to Special Summon this Synchro monster?
+
+### Ruling Format
+Decision: <YES/NO>
+Explanation: <short explanation>
+
+Decision: NO
+Explanation: The effect of ""Monster Reborn"" can only Special Summon a monster from the Graveyard that was previously face-up on the field. Since Player A's Synchro monster was sent to the Graveyard by the effect of ""Gale Dogra,"" it was not face-up on the field when it was sent there, so ""Monster Reborn"" cannot be used to Special Summon it."

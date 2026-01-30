@@ -1,0 +1,151 @@
+---
+title: "Tables"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+df <- read.csv("../results/merged_results.csv", stringsAsFactors = FALSE)
+```
+
+```{=latex}
+\pagenumbering{gobble}
+```
+
+```{r scenario-tables, results='asis'}
+
+escape_latex <- function(x) {
+  x <- as.character(x)
+  x <- gsub("\\\\n", " ", x)
+  x <- gsub("\n", " ", x)
+  x <- gsub("\r", " ", x)
+
+  x <- gsub("\\\\", "\\\\textbackslash{}", x)
+  x <- gsub("&", "\\\\&", x)
+  x <- gsub("%", "\\\\%", x)
+  x <- gsub("\\$", "\\\\$", x)
+  x <- gsub("#", "\\\\#", x)
+  x <- gsub("_", "\\\\_", x)
+  x <- gsub("\\{", "\\\\{", x)
+  x <- gsub("\\}", "\\\\}", x)
+  x <- gsub("~", "\\\\textasciitilde{}", x)
+  x <- gsub("\\^", "\\\\textasciicircum{}", x)
+  x
+}
+
+for (i in seq_len(nrow(df))) {
+
+  row <- df[i, ]
+
+  scenario <- escape_latex(row$id)
+  game_state <- escape_latex(row$game_state)
+  query <- escape_latex(row$query)
+
+  expected_dec <- escape_latex(row$expected_decision)
+  expected_exp <- escape_latex(row$expected_explanation)
+
+  baseline_dec <- escape_latex(row$baseline_decision)
+  baseline_exp <- escape_latex(row$baseline_explanation)
+
+  rag1_dec <- escape_latex(row$rag1_dec)
+  rag1_exp <- escape_latex(row$rag1_exp)
+
+  rag3_dec <- escape_latex(row$rag3_dec)
+  rag3_exp <- escape_latex(row$rag3_exp)
+
+  rag5_dec <- escape_latex(row$rag5_dec)
+  rag5_exp <- escape_latex(row$rag5_exp)
+
+  input_block <- paste0(
+  "\\parbox[t]{0.30\\textwidth}{",
+  "{\\footnotesize ",
+  "\\textbf{Game State:} ", game_state, "\\\\",
+  "\\textbf{Query:} ", query,
+  "}",
+  "}"
+  )
+
+  cat("
+\\begin{table}[ht]
+\\centering
+\\begin{tabular}{p{0.08\\textwidth} p{0.32\\textwidth} p{0.12\\textwidth} p{0.12\\textwidth} p{0.32\\textwidth}}
+\\hline
+\\textbf{Scenario} &
+\\textbf{Input (Game State \\& Query)} &
+\\textbf{Model} &
+\\textbf{Ruling} &
+\\textbf{Reasoning} \\\\
+\\hline
+")
+
+  # --- Expected row (NEW) ---
+  cat(
+    scenario, " & ",
+    input_block,
+    " & Expected & ", expected_dec, " & {\\footnotesize ", expected_exp, "} \\\\\n",
+    sep=""
+  )
+  
+  cat("
+  \\hline    
+  ")
+  
+  # --- Baseline ---
+  cat(
+    scenario, " & ",
+    input_block,
+    " & Baseline & ", baseline_dec, " & {\\footnotesize ", baseline_exp, "} \\\\\n",
+    sep=""
+  )
+  
+  cat("
+  \\hline    
+  ")
+
+  # --- RAG 1 ---
+  cat(
+    scenario, " & ",
+    input_block,
+    " & RAG(Top 1) & ", rag1_dec, " & {\\footnotesize ", rag1_exp, "} \\\\\n",
+    sep=""
+  )
+  
+  cat("
+  \\hline    
+  ")
+
+  # --- RAG 3 ---
+  cat(
+    scenario, " & ",
+    input_block,
+    " & RAG(Top 3) & ", rag3_dec, " & {\\footnotesize ", rag3_exp, "} \\\\\n",
+    sep=""
+  )
+  
+  cat("
+  \\hline    
+  ")
+
+  # --- RAG 5 ---
+  cat(
+    scenario, " & ",
+    input_block,
+    " & RAG(Top 5) & ", rag5_dec, " & {\\footnotesize ", rag5_exp, "} \\\\\n",
+    sep=""
+  )
+
+  cat("
+\\hline
+\\multicolumn{5}{c}{\\footnotesize (Continued on next page)} \\\\
+\\hline
+\\end{tabular}
+\\end{table}
+
+", sep="")
+}
+
+```
+
+
+

@@ -1,0 +1,716 @@
+
+
+
+1. Effect Monsters
+
+An Effect Monster is a monster that has special abilities.
+The effects of these monsters are split into four categories:
+• Continuous Effect 
+• Ignition Effect
+• Quick Effect
+• Trigger Effect (including Flip)
+
+Continuous Effect:
+This effect is active while the Effect Monster Card is face-up on the ﬁeld.
+The effect starts when the face-up monster appears on the ﬁeld, and ends once that monster is gone or is no longer face-up; there is no trigger for its activation. 
+These monsters are most useful if you have a strategy to protect them while they are on the ﬁeld.
+Example: Monsters with 2000 or less ATK cannot declare an attack.
+
+Ignition Effect:
+You use this type of effect just by declaring its activation during your Main Phase.
+There are some Ignition Effects that have a cost to activate, like discarding cards from your hand, Tributing a monster, or paying LP. 
+Because you can choose when to activate this type of effect, it’s easy to create combos with them.
+Example: You can Tribute this card, then target 1 monster on the ﬁeld; destroy that target.
+
+Quick Effect:
+These are special monster effects that you can activate even during your opponent’s turn. 
+These types of effects have a Spell Speed of 2, even though all other monster effects have a Spell Speed of 1.
+Since it’s difﬁcult for your opponent to predict these cards, they can give them an unexpected surprise.
+Example: When an effect is activated (Quick Effect): You can target 1 card in your Graveyard; Special Summon it.
+
+Trigger Effect:
+These effects are activated at speciﬁc times, such as “during the Standby Phase” or “when this monster is destroyed”. 
+These cards can make for some great combos, but it’s easier for your opponent to predict what will happen, so they might try to stop you.
+Example: When this card is destroyed by battle and sent to the Graveyard: Target 1 card on the ﬁeld; destroy that target.
+
+Flip Effect: 
+Flip effect is a part of the Trigger Effect.
+This is an effect that is activated when a face-down card is ﬂipped face-up. 
+This can happen when it is Flip Summoned, attacked while face-down, or ﬂipped face-up by a card effect. 
+These effects start with the word “FLIP:” on the card. 
+When you have a face-down monster, your opponent must be wary because they don’t know if it has a Flip effect or not. 
+Example: FLIP: Draw 1 card.
+
+
+2. LINK MONSTERS
+
+A Link Monster is a new kind of monster with the ability to increase  the number of monsters you can Summon from your Extra Deck. 
+In addition to the 1 Extra Monster Zone you can usually use, you can also Summon Link Monsters from the Extra Deck to any of your Main Monster Zones that has a Link Monster’s red arrow pointing to it.
+LINK Rating - This is the number of Link Arrows that monster has and the number of monsters needed to Summon it.
+Link Arrows - A Link Monster can apply its effects on cards or zones that its lit-up, red Link Arrows point to. 
+When a Link Monster’s red arrow points to a monster, those monsters are “linked”. 
+When two Link Monsters have red arrows that point at each other, they are “co-linked”.  
+Link Materials - These are the Link Materials you need to Summon this Monster. 
+Use this “recipe” printed here to Link Summon this monster.
+
+HOW TO LINK SUMMON:
+Check the materials of the Link Monster you want to Summon.
+During your Main Phase, declare that you are Link Summoning, send a number of face-up monsters from your ﬁeld to the Graveyard equal to the Link Rating of that Link Monster. 
+They must also match the material requirements listed in the monster’s “recipe” written on the card.
+Place the Link Monster from your Extra Deck in the Extra Monster Zone, or one of your Main Monster Zones that another Link Monster is pointing to.
+If 2 Extra Monster Zones are available, you can choose either one to Summon your monster. 
+If there is a Link Monster already on the ﬁeld, you can Link Summon a monster in one of your zones it points to. 
+
+LINK MONSTER BONUSES:
+Link Monsters already on the ﬁeld make great material!
+Normally, 1 monster equals 1 Link Material. But when you use a Link Monster as material for another Link Summon, you can count it as either 1 monster, or as a number of monsters equal to its Link Rating. 
+For example, if you want to Summon a Link 3 monster that requires 2 or more materials in its “recipe”, you can either use 3 monsters (each counts as 1 material) or else a Link 2 Link Monster (counts as 1 or 2 materials) and a second monster (counts as 1 material). 
+
+MORE ABOUT LINK MONSTERS:
+Link Monsters have no DEF and cannot ever be in Defense Position. 
+They can’t be changed to Defense Position by a card effect. 
+They can’t even be ﬂipped into face-down Defense Position.
+If your opponent has a monster in the Extra Monster Zone, it’s still a monster they control so you can’t attack directly. 
+You have to battle and destroy all their monsters ﬁrst, including the one in the Extra Monster Zone.
+If you take control of your opponent’s monster in the Extra Monster Zone, it moves to your Main Monster Zone. 
+When it goes back to your opponent, it goes to their Main Monster Zone, not the Extra Monster Zone.
+As long as the materials meet the requirements of the Link Monster you want to Summon, you can use a Token or Trap Card that is treated as a monster as the Link Material.
+Remember that when you Link Summon, you need to meet 3 goals:
+• The amount of materials you use matches the Link Rating (Link Monsters count as 1 OR their own Link Rating).
+• The number of materials you use meets the number speciﬁed in the materials line or “recipe”.
+• The materials match any other requirements in the materials line (such as only Effect Monsters, or only a speciﬁc Type of monster).
+
+
+3. PENDULUM MONSTER CARDS
+
+Pendulum Monster Cards are a unique kind of card that blurs the line between Monsters and Spells! 
+They can be Summoned as monsters to attack or defend, or you can activate them as Spell Cards in your Pendulum Zones to activate extra special abilities and allow you to Pendulum Summon!
+Pendulum Effect - When you play this card as a Spell Card in your Pendulum Zone, this is its effect. 
+Some Pendulum Monster Cards may not have Pendulum Effects.
+Pendulum Scale - Pendulum Scale is a number that determines which monsters you can Special Summon during a Pendulum Summon. 
+The Pendulum Scale of this card is 1.
+Monster Effect - When you play this card as a regular Monster Card, this is its effect. 
+Some Pendulum Monster Cards may not have monster effects.
+
+HOW TO PENDULUM SUMMON:
+During your Main Phase, activate Pendulum Monster Cards as Spell Cards in your leftmost and rightmost Spell & Trap Zones. 
+These Spell & Trap Zones also become Pendulum Zones.
+After you have one in each Pendulum Zone, once per turn during your Main Phase, declare that you’re Pendulum Summoning. 
+Check the Pendulum Scales on the sides of your 2 Pendulum Monster Cards, then Special Summon as many monsters as you want from your hand and as many face-up Pendulum Monsters from your Extra Deck, whose Levels are in between those Pendulum Scales.
+Whenever one of your Pendulum Monster Cards on the ﬁeld (regardless of which Zone it is in, or even if it is a monster or not) would be sent to the Graveyard, place it face-up on your Extra Deck instead. 
+You can Pendulum Summon it back to the ﬁeld later! Monsters Pendulum Summoned from the Extra Deck must be Summoned to the Extra Monster Zone or your Main Monster Zone pointed to by a Link Monster.
+
+
+4. XYZ MONSTERS
+
+Xyz Monsters (pronounced “ik-seez”) are a powerful kind of monster! 
+You can Summon an Xyz Monster whenever you control monsters that are the same Level. 
+Xyz Monsters start in your Extra Deck, not in your Main Deck, and wait for you to call them into action.
+
+Materials needed for an Xyz Summon:
+Xyz Monster’s Rank - This is the Rank of your Xyz Monster. 
+Xyz Monsters have Ranks instead of Levels. 
+Stronger Xyz Monsters have higher Ranks. 
+This is a Rank 4 Xyz Monster.
+Xyz Materials - These are the Xyz Materials you need to Summon this monster. 
+You use 2 Level 4 Monsters as the Xyz Materials to Summon this monster. 
+Xyz Materials must be face-up before you can use them.
+
+HOW TO XYZ SUMMON:
+Xyz Summoning is your cool and easy way to Special Summon Xyz Monsters from your Extra Deck. 
+Here’s how to do it!
+Choose an Xyz Monster from your Extra Deck that you have the right Xyz Materials for. 
+The Xyz Materials should be face-up on your ﬁeld.
+During your Main Phase, declare that you are Xyz Summoning and stack the Xyz Materials on top of each other.
+Take the Xyz Monster from your Extra Deck and put it on top of the stacked Xyz Materials in the Extra Monster Zone or in the Main Monster Zone in face-up Attack or Defense Position.
+When an Xyz Monster tells you to “detach” a material, take one of the stacked Xyz Material cards beneath your Xyz Monster and put it in the Graveyard.
+
+
+5. SYNCHRO MONSTERS
+
+Synchro Monsters are placed in the Extra Deck, separate from the Main Deck. 
+You can Special Summon a powerful Synchro Monster to the ﬁeld in an instant just by using the Levels of your monsters. 
+They can be Synchro Summoned from the Extra Deck by sending 1 face-up “Tuner” monster and any number of face-up non-Tuner monsters from your ﬁeld to the Graveyard, when the sum of all their Levels is exactly equal to the Level of the Synchro Monster.
+
+TUNER MONSTERS FOR SYNCHRO SUMMON:
+In order to Synchro Summon a Synchro Monster, you need 1 Tuner (look for “Tuner” next to its Type). 
+The Tuner monster and other face-up monsters you use for the Synchro Summon are called Synchro Materials. 
+The sum of their Levels is the Level of Synchro Monster you can Summon.
+
+HOW TO SYNCHRO SUMMON:
+During your Main Phase, you can declare a Synchro Summon when the combined total Levels of 1 face-up Tuner monster and any number of other face-up monsters you control are equal to the Level of the Synchro Monster you want to Synchro Summon.
+After double-checking the Level of the Synchro Monster you want, send the face-up Synchro Materials from your ﬁeld to the Graveyard.
+After sending the Synchro Materials from the ﬁeld to the Graveyard, take the Synchro Monster from your Extra Deck and play it in the Extra Monster Zone or in the Main Monster Zone in face-up Attack or Defense Position. 
+
+
+6. FUSION MONSTERS
+
+Fusion Monsters are also placed in your Extra Deck (not in your Main Deck). 
+They are Summoned by using the speciﬁc monsters listed on the card (called Fusion Materials) combined with a Summoning card like Polymerization. 
+They usually have special abilities and very high Attack Points as well. 
+Since Fusion Summons require speciﬁc cards, be sure and include those necessary cards in your Main Deck! 
+
+HOW TO FUSION SUMMON:
+If you have all the Fusion Materials listed on the Fusion Monster Card, in the places speciﬁed on your Summoning card, you can activate your Summoning card by placing it in your Spell & Trap Zone.
+Send the Fusion Materials to the Graveyard, then take the appropriate Fusion Monster from your Extra Deck and play it in the Extra Monster Zone or in the Main Monster Zone in either face-up Attack or Defense Position. 
+Finally, place your Summoning card in the Graveyard. 
+(If another card effect causes your Fusion Materials to be sent to a place other than the Graveyard when your Summoning card resolves, send them to that other place, but the Fusion Summon still happens anyway.)
+
+
+7. RITUAL MONSTERS
+
+Ritual Monsters are special monsters that are Special Summoned with a speciﬁc Ritual Spell Card, along with a required Tribute. 
+Ritual Monster Cards are placed in the Main Deck and cannot be Summoned unless you have all the proper cards together in your hand or on the ﬁeld. 
+Ritual Monsters generally have high ATK and DEF and some have special abilities, just like Fusion Monsters.
+
+HOW TO RITUAL SUMMON:
+When you have a Ritual Spell Card, along with the matching Ritual Monster Card, in your hand, along with the required Tribute (as listed on the Ritual Spell Card), you can activate the Ritual Spell Card, placing it in the Spell & Trap Zone.
+If the activation of the Ritual Spell Card is successful, Tribute monsters by sending them from your hand or the ﬁeld to the Graveyard. 
+The Ritual Spell Card will list the required amount to Tribute.
+After sending the Tributed monsters to the Graveyard, play the Ritual Monster Card in your Main Monster Zone in either face-up Attack or Defense Position. 
+Finally, place the Ritual Spell Card in the Graveyard.
+
+
+8. Summoning Monster Cards
+
+There are several ways to play monsters onto the ﬁeld. 
+These ways can be categorized into 2 groups: actions that can be done only once per turn, and actions that can be done multiple times per turn. 
+
+You can do one of these once per turn:
+• Normal Summon
+This is the most common way to Summon a monster. 
+Simply play a Monster Card from your hand onto the ﬁeld in face-up Attack Position. 
+All Normal Monsters, and most Effect Monsters (unless they have a speciﬁc restriction), can be Summoned in this way.
+
+• Normal Set
+To play a Monster Card from your hand in face-down Defense Position is called a Normal Set. 
+A monster Normal Set on the ﬁeld is NOT considered Summoned. 
+It has been Normal Set, and can be Summoned with a Flip Summon or ﬂipped face-up by an attack or card effect. 
+Remember, you can only Normal Summon OR Normal Set (Normal Summon/Set, in short), once per turn, so if you Normal Set a monster you cannot also Normal Summon a monster that turn.
+Note: You cannot play a monster from your hand onto the ﬁeld in face-up Defense Position.
+
+• Tribute Summon
+For monsters that are Level 5 or higher, you must Tribute at least 1 monster you control before the Normal Summon/Set. 
+This is called a Tribute Summon. 
+Monsters that are Level 5 or 6 require 1 Tribute and Monsters that are Level 7 or higher require 2 Tributes.
+If you Tribute Summon in face-down Defense Position, it is called a Tribute Set. 
+A monster Tribute Set on the ﬁeld is NOT considered Summoned.
+Note: When a card explains a special method to Tribute Summon a monster, you can also Tribute Set the monster by the same method.
+
+You can do as many of these during a turn as you want:
+• Flip Summon
+You can change a face-down Defense Position monster into face-up Attack Position, without using a card effect. 
+This is called a Flip Summon. 
+When you Flip Summon, you cannot change the monster to face-up Defense Position, only to face-up Attack Position. 
+A Monster Card cannot be Flip Summoned in the same turn that it was Set onto the ﬁeld. 
+You cannot use most monsters’ effects until they are face-up.
+
+• Special Summon
+Some monsters can be played onto the ﬁeld without being Normal Summoned or Set. 
+This is called a Special Summon. 
+Pendulum Summons, Xyz Summons, Synchro Summons, Fusion Summons and Ritual Summons are all Special Summons. 
+Some Effect Monsters also have speciﬁc conditions that allow you to Special Summon them. 
+Unless otherwise speciﬁed, a Special Summoned monster is played onto the ﬁeld in your choice of face-up Attack Position or face-up Defense Position.
+
+• Special Summon with a Card’s Effect
+Monsters can also be Special Summoned onto the ﬁeld through the effect of another card. 
+This is different from “Special Summon Monsters.” 
+You cannot use a card effect to Special Summon those monsters from your hand, Deck, or the Graveyard unless it was properly Special Summoned ﬁrst. 
+For example, if a Synchro Monster is sent from your Extra Deck to the Graveyard without being Synchro Summoned, you cannot use a Spell Card to Special Summon it from the Graveyard, because Synchro Monsters have to be properly Special Summoned ﬁrst, before they can be Special Summoned by another card’s effect.
+
+
+9. Spell Cards
+
+Spell Cards can normally be activated only during your Main Phase, and help you out with different effects. 
+Spell Cards have many powerful effects, like destroying other cards or strengthening monsters.
+Save these cards in your hand until you can get the best results out of them.
+
+Normal Spell Cards:
+Normal Spell Cards have single-use effects. To use a Normal Spell Card, announce its activation to your opponent, placing it face-up on the ﬁeld. 
+If the activation succeeds, then you resolve the effect written on the card. 
+After resolving the effect, send the card to the Graveyard. 
+
+Ritual Spell Cards:
+These Spell Cards are used to perform Ritual Summons. 
+Use these cards in the same way as you would use Normal Spell Cards.
+
+Continuous Spell Cards:
+These cards remain on the ﬁeld once they are activated, and their effect continues while the card stays face-up on the ﬁeld. 
+By using Continuous Spell Cards, you can create lasting positive effects with a single card, which is great but there’s the chance that the opponent will remove it from the ﬁeld before you beneﬁt from the effect.
+
+Equip Spell Cards:
+These cards give an extra effect to 1 face-up monster of your choice (either your own or your opponent’s, depending on the card).
+They remain on the ﬁeld after they are activated. 
+The Equip Spell Card affects only 1 monster (called the equipped monster), but still occupies one of your Spell & Trap Zones. 
+If possible, place it in the zone directly behind the equipped monster to help you remember. 
+If the equipped monster is destroyed, ﬂipped face-down, or removed from the ﬁeld, its Equip Cards are destroyed.
+
+Field Spell Cards:
+These cards go in your Field Zone and stay there. 
+Each player can have 1 Field Spell Card on their own side of the ﬁeld. 
+To use another Field Spell, send your previous one to the Graveyard. 
+Many Field Spell effects apply to BOTH players. 
+These cards may be placed face-down in the Field Zone, but are not active until ﬂipped face-up.
+
+Quick-Play Spell Cards:
+These are special Spell Cards that can be activated during any Phase of your turn, not just your Main Phase. 
+You can also activate them during your opponent’s turn if you Set the card face-down ﬁrst, but then you cannot activate the card in the same turn you Set it.
+
+
+10. Trap Cards
+
+Trap Cards will help you out with different effects, just like Spell Cards. 
+The big difference between them is that you can activate Trap Cards during your opponent’s turn. 
+Many Spell Cards have effects useful for offense, but Trap Cards have the ability to surprise the opponent by disrupting their attacks and strategies. 
+Using Trap Cards can sometimes be tricky, since your opponent might have to do certain things before you can unleash them.
+
+Normal Trap Cards:
+Before you can activate a Trap Card, you must Set it on the ﬁeld ﬁrst. 
+You cannot activate a Trap in the same turn that you Set it, but you can activate it at any time after that—starting from the beginning of the next turn.
+Normal Trap Cards have single-use effects and once their effects are resolved, they will be sent to the Graveyard, just like Normal Spell Cards.
+They are also similar to Normal Spell Cards because once activated, their effects are not likely to be stopped. 
+However, your opponent can destroy your face-down Trap Cards on the turn they were Set, or before the time is right to activate them. 
+Because of this, you must be smart about how you use your Trap Cards.
+
+Continuous Trap Cards:
+Just like Continuous Spell Cards, Continuous Trap Cards remain on the ﬁeld once they are activated and their effects continue while they are face-up on the ﬁeld.
+Some Continuous Trap Cards have abilities similar to the Ignition Effects or Trigger Effects that can be found on Effect Monster Cards. 
+Continuous Trap Cards can have effects that limit your opponent’s options, or that slowly damage your opponent’s LP.
+
+Counter Trap Cards:
+These Trap Cards are normally activated in response to the activation of other cards, and may have abilities like negating the effects of those cards. 
+These types of Traps are effective against Normal Spell Cards or Normal Trap Cards, which are otherwise hard to stop, however many Counter Trap Cards require a cost to activate them.
+
+• The Difference between Set Spell Cards and Set Trap Cards:
+Spell Cards can be Set face-down on the ﬁeld like Trap Cards. 
+However, the rules for the two types of cards are different. 
+Spell Cards can be activated during the Main Phases even in the same turn that you Set them (except for Quick-Play Spell Cards). 
+Setting them does not allow you to use them on your opponent’s turn; they still can only be activated during your Main Phase.
+You can Set a Spell Card face-down on the ﬁeld to bluff your opponent into thinking you have a powerful Trap.
+
+
+11. Turn Structure
+
+A Duel progresses in a series of turns which are divided into phases.
+
+Draw Phase:
+This is the ﬁrst phase. 
+The player whose turn it is (the “turn player”) draws 1 card from the top of their Deck. 
+A player with no cards left in their Deck and unable to draw loses the Duel. 
+After you draw, Trap Cards or Quick-Play Spell Cards can be activated before proceeding to the Standby Phase.
+IMPORTANT: The player who goes ﬁrst cannot draw during the Draw Phase of their ﬁrst turn.
+
+Standby Phase:
+Some cards have effects that activate, or costs you must pay, in the Standby Phase. 
+If you do not have any of these cards on the ﬁeld, you can still activate Trap Cards or Quick-Play Spell Cards before moving on to your Main Phase 1.
+
+Main Phase 1:
+This is when you play most of your cards: you can Normal Summon, Set, or change the battle position of a monster, activate a card’s effect, and Set Spell and Trap Cards.
+These actions can be done in any order you want, but some actions have restrictions.
+
+Possible Actions in this Phase.
+• Summon or Set a Monster
+There is no limit to the number of times you can Flip Summon or Special Summon during a turn, but you can only Normal Summon or Set a monster (including a Tribute Summon) once per turn. 
+
+• Change Your Monsters’ Battle Positions.
+This includes Flip Summoning a monster, or changing the position of a face-up monster to face-up Attack or Defense Position. 
+You can change the position of each monster you control, except in three cases.  
+1. You cannot change the battle position of a monster that was played onto the ﬁeld this turn.  
+2. You cannot change it in Main Phase 2 if the monster attacked during the Battle Phase. 
+3. You cannot change it if you have already changed its battle position once this turn.
+
+• Active a Card or Effect
+You can activate Spell and Trap Cards, or the effects of Spell, Trap, or Effect Monster Cards as many times as you want during this phase, as long as you can keep paying any costs involved. 
+
+• Set Spell Cards and Trap Cards
+You can Set Spell and Trap Cards face-down in your Spell & Trap Zone during this phase, as long as you have space.
+
+Battle Phase:
+Now it’s time to battle with your Monster Cards! 
+This phase is divided into steps.
+You do not have to conduct a Battle Phase every turn, even if you have a monster on the ﬁeld. 
+IMPORTANT: The player who goes ﬁrst cannot conduct their Battle Phase on their ﬁrst turn.
+
+Possible Actions in this Phase.
+• Battle with monsters
+• Activate Trap Cards and Quick-Play Spell Cards
+
+The Battle Phase is split into 4 steps and is conducted in the following order: 
+Note: The Battle Step and Damage Step are repeated each time you attack with a monster.
+
+• Start step.
+This step starts the Battle Phase. 
+The turn player shouldannounce “I’m entering the Battle Phase.” 
+Remember, the player who goes ﬁrst cannot conduct a Battle Phase in their very ﬁrst turn.
+
+• Battle Step:
+Select 1 monster on your side of the ﬁeld to attack with, and 1 of your opponent’s monsters as your attack target, and then declare the attack. 
+If your opponent does not have any monsters on the ﬁeld, you can attack directly. 
+Play then proceeds to the Damage Step. 
+Afterwards, the attacking player returns to the Battle Step, and repeats this procedure. 
+Each face-up Attack Position monster you control is allowed 1 attack per turn. 
+You do not have to attack with a monster if you don’t want to.
+
+• Damage Step:
+In this step, the players calculate the result of the battle and whatever damage is done. 
+After ﬁnishing the Damage Step, return to the Battle Step.
+
+• End Step:
+After you’ve resolved all your battles by repeating the Battle and Damage Steps, and you have no more monsters you want to attack with, announce to your opponent that you are ending your Battle Phase.
+
+Replay Rules during the Battle Step:
+After you’ve announced your attacking monster and the attack target monster during a Battle Step, the attack target might be removed from the ﬁeld, or a new monster may be played onto the opponent’s side of the ﬁeld before the Damage Step, due to a card’s effect.
+This causes a “Replay.” 
+When this occurs, you can choose to attack with the same monster again, or choose to attack with a different monster, or choose not to attack at all. 
+Note that if you attack with a different monster, the ﬁrst monster is still considered to have declared an attack, and it cannot attack again this turn.
+
+DAMAGE STEP RULES
+During the Damage Step, you can only activate Counter Trap Cards, or cards with effects that directly change a monster’s ATK or DEF. 
+Also, these cards can only be activated up until the start of damage calculation.
+
+• Limitations on Activating Cards
+If you attack a face-down Defense Position monster, ﬂip the card to face-up Defense Position in the Damage Step. 
+Now you can see the monster’s DEF and then calculate damage.
+
+• Attacking a Face-Down Card 
+When an attacked monster is ﬂipped face-up, any Flip effects are activated and resolved after damage calculation.
+If you need to select a monster for the Flip effect to target, you cannot target a monster that has already been destroyed during damage calculation.
+
+• Activation of a Flip Effect
+During the Damage Step, there are limits on what cards you can activate.
+Also, during the Damage Step, Flip effects resolve a bit differently than they normally do.
+
+Main Phase 2:
+If you conducted your Battle Phase, your turn moves to Main Phase 2 afterwards. 
+The actions a player can perform in this phase are the same as in Main Phase 1. 
+However, if the player already did something in Main Phase 1 that has a limit to the number of times it can be done, the player cannot do it again in Main Phase 2. 
+Consider if you want to activate and Set Spell & Trap Cards, or Summon or Set a monster (if you didn’t do that in Main Phase 1) based on your situation after the Battle Phase.
+Use this phase to prepare for the opponent’s turn.
+
+Possible Actions in this Phase.
+• Summon or Set a monster
+• Change your monsters’ battle positions
+• Active a card or effect
+• Set Spell Cards and Trap Cards
+
+End Phase:
+Announce the end of your turn, and if there are any cards on the ﬁeld which say “…during the End Phase…” in their text, resolve those effects in this phase. 
+If you have more than 6 cards in your hand at the end of this phase, select and discard cards to the Graveyard until you only have 6 cards in your hand.
+
+Actions in this Phase.
+• Resolve card effects whichactivate in this phase
+• Discard if you have more than 6 cards in hand
+
+Possible Other Actions in this Phase.
+• Activate Trap Cards and Quick-Play Spell Cards 
+
+
+12. DETERMINING DAMAGE
+
+You calculate battle damage based on the battle position of the monster you are attacking. 
+If you attack an Attack Position monster, compare ATK vs. ATK. 
+If you attack a Defense Position monster, compare your monster’s ATK vs. the attacked monster’s DEF. 
+
+When You Attack an Attack Position Monster:
+
+• WIN
+When your attacking monster’s ATK is higher than the ATK of the opponent’s monster, the attacking monster destroys the opponent’s monster and sends it to the Graveyard. 
+The amount that your attacking monster’s ATK exceeds the ATK of your opponent’s monster is subtracted from your opponent’s LP as battle damage.
+
+• TIE
+When your attacking monster’s ATK is equal to the ATK of the opponent’s monster, the result is considered a tie, and both monsters are destroyed.
+Neither player takes any battle damage.
+
+• LOSE
+When your attacking monster’s ATK is lower than the ATK of the opponent’s monster, the attacking monster is destroyed and sent to the Graveyard.
+The amount that the opponent’s monster’s ATK exceeds the ATK of your attacking monster is subtracted from your LP as battle damage.
+
+When You Attack a Defense Position Monster:
+
+• WIN
+When your attacking monster’s ATK is higher than the DEF of the opponent’s monster, the attacking monster destroys the opponent’s monster and sends it to the Graveyard. 
+Neither player takes any battle damage.
+
+• TIE
+When your attacking monster’s ATK is equal to the DEF of the opponent’s monster, neither monster is destroyed.
+Neither player takes any battle damage.
+
+• LOSE
+When your attacking monster’s ATK is lower than the DEF of the opponent’s monster, neither monster is destroyed.
+The amount that the opponent’s monster’s DEF exceeds the ATK of your attacking monster is subtracted from your LP as battle damage.
+
+If Your Opponent Has No Monsters:
+If there are no monsters on your opponent’s side of the ﬁeld, you can attack directly. 
+The full amount of your attacking monster’s ATK is subtracted from the opponent’s LP as battle damage.
+
+
+13. Chains and Spell Speed
+
+WHAT IS A CHAIN?
+Chains are a way to order the resolution of multiple card effects. 
+They are used when the effects of more than 1 card are activated at once, or when a player wants to use an effect after a card has been played, but BEFORE that card has an effect on the game.
+If a card’s effect is activated, the opponent is always given a chance to respond with a card effect of their own, creating a Chain. 
+If your opponent responds with an effect, then you can choose to respond and add another effect to the Chain. 
+If your opponent does not respond, you may activate a second effect and create a Chain to your own card’s activation. 
+Both players continue to add effects to the Chain until they both wish to add nothing else, then you resolve the outcome in reverse order – starting with the last card that was activated.
+You must always be careful not to resolve the effects of your cards before asking your opponent if they wish to make a Chain.
+
+SPELL SPEED:
+Every type of card effect has a Spell Speed between 1 and 3. 
+If you want to respond to a card effect in a Chain, you have to use an effect with Spell Speed 2 or higher, and it cannot have a lower Spell Speed than the effect you are responding to. 
+
+Spell Speeds:
+Spell, Trap, and Effect Monster effects have different Spell Speeds. 
+There are Spell Speeds from 1 to 3. 
+You can only respond with an effect if it is Spell Speed 2 or higher, and has an equal or greater Spell Speed than the effect on the Chain Link before it.
+
+• Spell Speed 1
+Spells (Normal, Equip, Continuous, Field, Ritual), Effect Monster’s effects (Ignition, Trigger, and Flip):
+This is the slowest of all Spell Speeds. 
+These cards cannot be activated in response to any other effects. 
+Typically, these effects cannot be Chain Link 2 or higher, unless multiple Spell Speed 1 effects are activated simultaneously.
+
+• Spell Speed 2
+Traps (Normal, Continuous), Quick-Play Spells, Effect Monster’s Quick Effects:
+These cards can be used to respond to a Spell Speed 1 or 2 effect, and can typically be activated during any phase.
+
+• Spell Speed 3
+Counter Traps:
+This is the fastest of all Spell Speeds and can be used to respond to a card of any Spell Speed. 
+Only another Spell Speed 3 card may be used to respond to these cards.
+
+How a Chain Works:
+The ﬁrst effect activated is Chain Link 1. 
+The next effect is Chain Link 2, and so on. 
+Every time a new Chain Link is made, they are stacked up in the order that the cards are activated.
+Once the Chain is completed, the outcome is resolved starting with the most recent card to be activated at the top of the Chain and proceeding down to Chain Link 1.
+
+EXAMPLE OF A CHAIN:
+Player A plays “Heavy Storm” and Player B responds by activating their Set “Threatening Roar.”
+Then, Player A responds to that by activating “Seven Tools of the Bandit.”
+In this case, Chain Links are stacked up as following.
+
+• Chain Link 3
+“Seven Tools of the Bandit” Negates the effect of “Threatening Roar”
+Spell Speed 3
+
+• Chain Link 2
+“Threatening Roar” Prevents the opponent from declaring attacks this turn.
+Spell Speed 2
+
+• Chain Link 1
+“Heavy Storm” Destroys all Spell and Trap Cards on the ﬁeld.
+Spell Speed 1 
+
+”Seven Tools of the Bandit” (Chain Link 3) is resolved ﬁrst and negates the activation of “Threatening Roar.” 
+“Threatening Roar” (Chain Link 2) would then be resolved, but the effect of “Seven Tools of the Bandit” stops its activation. 
+The turn player will still be able to declare attacks.
+Then the effect of “Heavy Storm” (Chain Link 1) is resolved successfully, destroying all Spell and Trap Cards on the ﬁeld, allowing the turn player to attack without interference from Spell or Trap Cards.
+
+TURN PLAYER’S PRIORITY:
+The turn player always starts with Priority, or the choice to activate a card first, in each phase or step of their turn. 
+As long as the turn player has Priority, the opponent cannot activate cards or effects, except for effects that activate automatically, like Trigger or Flip effects. 
+The turn player can either:
+• Use Priority to play a card or activate an effect OR
+• Pass Priority to the opponent so they can activate an effect. 
+
+A player must pass Priority to the opponent when moving on to the next phase or step. 
+Strictly speaking, you would always declare that you’re passing Priority before the end of every phase and step, and ask your opponent if they wish to play a card. 
+However, for ease of play, announcing the end of your phases or steps implies giving up Priority. 
+Therefore, when announcing the end of a phase, your opponent can just say “Before the end of your phase, I activate this card” and use a card. 
+• The turn player starts with Priority to activate a card or effect ﬁrst.
+• After a card’s activation, and at the end of each phase or step, Priority passes to the opponent.
+
+
+14. Other Rules
+
+• Forbidden & Limited Cards
+Normally, your Deck (including Extra Deck and Side Deck) can contain up to 3 copies of a card that has the same name. 
+However, certain cards have speciﬁc quantity restrictions that further limit the number that can be included in a Deck.
+There are 3 types of restrictions: 
+Limited cards are restricted to 1 copy in a Deck, while Semi-Limited cards are restricted to 2 copies in a Deck. 
+Forbidden cards are not allowed to be included at all. 
+The list of Forbidden and Limited cards is updated regularly and is posted on the Yu-Gi-Oh! TCG Ofﬁcial Website.
+This list is applied to ofﬁcial tournaments so please check it before participating.
+Ofﬁcial Website: www.yugioh-card.com
+
+• Monster Tokens
+Monster Tokens are monsters that appear on the ﬁeld as the result of a card’s effect. 
+They are not included in the Deck, and cannot be sent anywhere other than the ﬁeld, such as the hand or Graveyard. 
+When a Token is destroyed or returned to the hand or Deck, they are simply removed from the ﬁeld instead.
+You can use ofﬁcial Token cards or use coins, card sleeves, or any similar marker (as long as it can indicate Attack Position or Defense Position) as Monster Tokens and play them in Monster Zones. 
+Each Monster Token takes up 1 of your 5 Monster Zones. 
+Their battle position is always either face-up Attack Position or face-up Defense Position. 
+Tokens cannot be used as an Xyz Material. 
+Tokens on the ﬁeld are treated as Normal Monsters. 
+
+• Public Knowledge
+The number of cards in a player’s hand and Decks, the cards in their Graveyards, and each player’s current LP are all public knowledge and both players can verify these things at any time.
+If asked, you must answer these things to your opponent truthfully. 
+You are allowed to pick up and verify the cards in your opponent’s Graveyard but you must ask their permission ﬁrst. 
+Also, you may not change the order of the cards when verifying their Graveyard.
+
+• If both players conduct actions simultaneously
+For cases like “Each player targets 1 monster,” where both players resolve an effect simultaneously, the turn player resolves the effect ﬁrst.
+In this example, after the turn player makes their selection, the other player makes theirs.
+
+• When multiple cards are activated simultaneously
+If effects of Spell Speed 1 cards (like Trigger Effects) are activated at the same time, they will be resolved in a special Chain. 
+This Chain is made starting with the turn player’s mandatory effects. 
+If there is only 1 effect, that will be Chain Link 1. 
+If there are 2 or more effects, the turn player builds the Chain starting with their mandatory effects, in any order. 
+Then the opponent continues the Chain with their mandatory effects in any order. 
+Afterwards, the turn player adds their optional effects in any order, and ﬁnally the opponent adds their optional effects in any order.  
+
+• 0 ATK monsters
+Monsters with 0 ATK cannot destroy anything by battle. 
+If two Attack Position monsters with 0 ATK battle each other, neither monster is destroyed. 
+
+• Rules vs. Card Effects
+If there is a discrepancy between the basic rules and a card’s effect, the card effect takes precedence.
+For example, a monster can only attack once per turn, but with a card effect, it is possible to attack twice.
+
+• Counters
+You may need to place these on cards for some card effects. 
+You cannot place counters unless a card effect allows it. 
+Cards may have effects that change with the number of counters on them, or require you to remove counters as a cost.
+Some counters have speciﬁc names, such as “Spell Counter” or “Clock Counter.” 
+Other than their names, each individual counter itself does not have any effects.  
+
+• Actions which cannot be Chained to
+You can only create a Chain by responding to the activation of a card or effect. 
+Summoning a monster, Tributing, changing a monster’s battle position and paying costs are not effect activations and therefore you cannot respond to those actions using a Chain.
+
+• Xyz Materials
+Monsters that are used to Xyz Summon are called “Xyz Materials”, and are placed underneath the Xyz Monster, to show that they are attached to it. 
+Monsters that have become Xyz Materials are not treated as cards on the ﬁeld. 
+When an Xyz Monster leaves the ﬁeld, all of the Xyz Materials attached to it are sent to the Graveyard. 
+If an Xyz Monster is ﬂipped face-down, or becomes controlled by the opponent, the Xyz Materials are not sent to the Graveyard. 
+They remain attached to the Xyz Monster.
+
+• Leaves the Field
+Some monsters have effects that activate when they “leave the ﬁeld”. 
+For example, these effects activate when the monster is sent to the Graveyard, or is banished, or is returned to the hand or Extra Deck. 
+When a monster on the ﬁeld is shufﬂed into the Deck, or becomes an Xyz Material, it is no longer a card on the ﬁeld, however its effects that activate when it “leaves the ﬁeld” will not activate.
+
+• Restrictions
+The restriction of “you cannot Normal or Special Summon the turn you activate this card” only refers to monsters that were successfully summoned. 
+Same for “you can only Special Summon X once per turn” restrictions.
+
+• Trap Monsters
+Trap Monsters that say “This card is also still a Trap.” do not occupy both a Monster Zone and a Spell & Trap Zone. 
+They are only in the Monster Zone (where the card actually is) and do not take up a Spell & Trap Zone.
+
+
+15. Glossary
+
+• Attack Directly
+Attacking directly means that a monster attacks a player instead of attacking a monster. 
+In this case, the damage to the player will be equal to the monster’s ATK. 
+Some monsters have an effect that allows them to attack directly even if the opponent controls a monster.
+
+• Banished Cards (Previously Remove from Play)
+Although a card that has been used is normally sent to the Graveyard, a card which is banished is separated from the ﬁeld instead. 
+You must return your banished cards so you can use them for the next Duel.
+
+• Battle / Battled
+A monster “battles” (and is “battling”) starting from when it attacks or is attacked.
+This includes both monsters attacking other monsters, and monsters attacking a player’s Life Points directly. 
+When a card requires a monster to have “battled” (past tense), the attack had to have reached the damage calculation portion of the Damage Step in order for the monster to have “battled”. 
+If the attack stops before damage calculation, the monster did not “battle”. 
+(Note that an attack was still declared, however, so in most cases the attacking monster cannot declare another attack.
+
+• Battle Damage
+Battle damage is damage inﬂicted to a player by an attacking monster, or by a battle between two monsters. 
+This is different from damage from the effect of an Effect Monster, Spell Card or Trap Card.
+
+• Cards on the Field
+When “cards on the ﬁeld” is written in card text, it means all the cards on the Game Mat other than the Graveyard, Deck, and Extra Deck.
+
+• Colon (:) and Semi-colon (;)
+Card effects are sometimes separated with a colon (:) and/or semi-colon (;). 
+Text before the colon gives information on conditions to activate the effect, and timing on when it happens. 
+Text before a semi-colon is what you do when the effect is activated. 
+Text at the end of a sentence, after all colons and semi-colons, is what you do at resolution of the effect. 
+
+• Control / Possess
+Cards you “control” are the cards in your Monster Zone, Spell & Trap Zone, Field Zone, and Pendulum Zone. 
+Cards in your “possession” include all cards you control, plus the cards in your hand, Deck, Extra Deck, Graveyard, your banished cards, cards in the middle of being Summoned to your side of the ﬁeld, and Xyz Materials attached to monsters you control. 
+If a player takes control of a card from their opponent, move it to the new controller’s side of the ﬁeld. 
+If sent to the Graveyard, or returned to the hand or Deck, it is always returned to the Graveyard / hand / Deck of the original owner.
+
+• Destroy
+A card is destroyed when it is sent to the Graveyard due to battle between monsters or by an effect that destroys a card. 
+A card that is returned from the ﬁeld to the hand or Deck, or, that is sent to the Graveyard as a cost or Tribute, is NOT considered “destroyed.” 
+
+• Discard
+Discard means to send a card from your hand to the Graveyard. 
+This can happen because of a card effect or by adjusting the number of cards in your hand during the End Phase.
+
+• Effects of Cards
+The effect of a card is the special ability written on it, like the effect of a Spell, Trap, or Effect Monster. 
+Costs that are needed to activate an ability are not part of the effect. 
+The conditions that describe how to play a “Special Summon Monster” are also not an effect. 
+
+• Equip Cards
+In addition to Equip Spell Cards, sometimes Trap Cards or Monster Cards can become equipped to a monster. 
+Equipped Traps remain Trap Cards, but equipped monsters are considered to be Equip Spells. 
+The term “Equip Card” includes all 3 kinds (standard Equip Spells, equipped Traps, and monsters equipped to other monsters).
+If a Monster Card is equipped to another monster, it remains equipped to that monster and cannot be moved to a different target, even by card effects that would normally be able to do so.
+EXCEPTION: Union monsters equipped by their own effects can be moved by appropriate card effects.
+
+• Equipped Monster
+A monster that is equipped with an Equip Card is an “equipped monster.” 
+When this monster is destroyed or ﬂipped face-down, the equipped card loses its target, and is destroyed and sent to the Graveyard.
+
+• Excavate
+When a card says to “excavate” cards from your Deck, you reveal those cards to both players. 
+Then, before you do anything else, apply the instructions from the card effect that excavated them. 
+Cards that are being excavated are still treated as being in the Deck until sent elsewhere by the card instructions.
+
+• Original ATK (or DEF)
+The Original ATK (or DEF) is the number of ATK (or DEF) points printed on the Monster Card. 
+This does not include an increase from an Equip Spell Card or other card effect. 
+
+• Pay a Cost
+To pay a cost is an action required by a player in order to activate a card, an effect, or to Summon a monster. Tributing to Tribute Summon a Level 5 monster is an example of a cost. 
+Other common costs are discarding, paying LP, or banishing cards. 
+You have to pay any costs before you declare the activation of the card. 
+Even if the activation of the card is negated, you cannot get a refund of the cost that you have paid.
+
+• Piercing Battle Damage
+Some monsters can inﬂict piercing battle damage when they attack a Defense Position monster. 
+This means that you inﬂict damage to your opponent’s LP equal to the difference between the attacking monster’s ATK and the defending monster’s DEF.
+
+• Random
+When a card effect says to choose a card randomly, there is no ofﬁcial way of doing so, it is ﬁne as long as neither player has a way of knowing which card is being chosen.
+
+• Reveal
+When an effect says to reveal a card, you show it to both players. 
+You may have to reveal a face-down card, a card from your hand, or from the top of your Deck. 
+Revealing a card does not activate the card or its Flip effect. 
+Normally, revealed cards are returned to their original position after being looked at by both players.
+
+• Search your Deck
+Whenever an effect instructs you to add a card from your Deck to your hand, or to Special Summon a monster from your Deck, you can pick up your Deck and search through it for the appropriate card. 
+You must shufﬂe your Deck after any time you search it and let your opponent shufﬂe or cut. 
+You cannot activate an effect to search your Deck for a card if there are no cards that meet the requirements in your Deck.
+
+• Send to the Graveyard
+A card can be sent to the Graveyard in various ways. 
+Destroying a card, discarding, and Tributing a monster are all actions that send a card to the Graveyard, and will normally activate “When this card is sent to the Graveyard…” Trigger Effects. 
+EXCEPTION: When a banished card is moved to the Graveyard, it is not considered to be “sent to the Graveyard”.
+
+• Set
+Playing a card face-down is called a Set. 
+For Monster Cards, playing it in face-down Defense Position is called a Set. 
+Any card that is face-down on the ﬁeld is a Set card.
+
+• Shuffle
+There is no rule for how to shufﬂe, but while shufﬂing you cannot look at the cards you are shufﬂing, or arrange the cards and then shufﬂe them.
+
+• Tribute
+Tributing is sending a monster you control to the Graveyard. 
+You can Tribute a face-up or face-down monster, unless otherwise speciﬁed. 
+Tributing a monster is one possible cost for Summoning a monster or activating an effect. 
+A monster sent to the Graveyard by Tributing is not treated as “destroyed.”
